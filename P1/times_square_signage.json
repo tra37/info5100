@@ -1,0 +1,1242 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "6bzx-emuu",
+      "name" : "Times Square Signage",
+      "attribution" : "Times Square Alliance (TSA)",
+      "averageRating" : 0,
+      "category" : "Business",
+      "createdAt" : 1320081571,
+      "description" : "Information on signage in the Times Square area",
+      "displayType" : "table",
+      "downloadCount" : 1129,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1414260345,
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 357809,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1320082949,
+      "publicationGroup" : 249449,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1320081574,
+      "rowsUpdatedBy" : "txun-eb7e",
+      "tableId" : 249449,
+      "totalTimesRated" : 0,
+      "viewCount" : 1588,
+      "viewLastModified" : 1409962344,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 3351816,
+        "name" : "Screen Name (LED + Vinyl Signs)",
+        "dataTypeName" : "text",
+        "fieldName" : "screen_name_led_vinyl_signs_",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643416,
+        "width" : 472,
+        "cachedContents" : {
+          "non_null" : 184,
+          "largest" : "Wrigley's Screen",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Broadway Spire W Hotel (1567 Broadway btw 46th & 47th)",
+            "count" : 20
+          }, {
+            "item" : "Winter Garden Theatre (Broadway @ 50th)",
+            "count" : 19
+          }, {
+            "item" : "Winter Garden Theatre (7th Avenue between 50th & 51st)",
+            "count" : 18
+          }, {
+            "item" : "Winter Garden Theatre Package (7th Avenue & Broadway Btw 50th & 51st)",
+            "count" : 17
+          }, {
+            "item" : "Above TSQ Brasserie 3-panel wrap (TNT)",
+            "count" : 16
+          }, {
+            "item" : "Above Lace (Humane Watch.org)",
+            "count" : 15
+          }, {
+            "item" : "Above Tonic (Nurse Jackie)",
+            "count" : 14
+          }, {
+            "item" : "Above former Hawaiian Tropic (ESPN draft)",
+            "count" : 13
+          }, {
+            "item" : "Next to former Hawaiian Tropic (ESPN draft)",
+            "count" : 12
+          }, {
+            "item" : "On roof (Heaven on Broadway)",
+            "count" : 11
+          }, {
+            "item" : "Above Souvenirs & Gifts lowest (Home Goods)",
+            "count" : 10
+          }, {
+            "item" : "Above Souvenirs & Gifts middle (Home Goods)",
+            "count" : 9
+          }, {
+            "item" : "Above Souvenirs & Gifts highest (Home Goods)",
+            "count" : 8
+          }, {
+            "item" : "Above Pax wraparound (Barclays)",
+            "count" : 7
+          }, {
+            "item" : "Morgan Stanley Building (750 7th Avenue)",
+            "count" : 6
+          }, {
+            "item" : "750 Seventh Avenue (7th Avenue @50th)",
+            "count" : 5
+          }, {
+            "item" : "Morgan Stanley Building - Rooftop (750 7th Avenue)",
+            "count" : 4
+          } ],
+          "smallest" : "1460 Broadway (Broadway between 41st & 42nd)"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351817,
+        "name" : "Building Address",
+        "dataTypeName" : "text",
+        "fieldName" : "building_address",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643417,
+        "width" : 292,
+        "cachedContents" : {
+          "non_null" : 184,
+          "largest" : "Military Island",
+          "null" : 0,
+          "top" : [ {
+            "item" : "234 W 42nd St",
+            "count" : 20
+          }, {
+            "item" : "243 W 42nd St",
+            "count" : 19
+          }, {
+            "item" : "3 Times Sq",
+            "count" : 18
+          }, {
+            "item" : "5 Times Sq",
+            "count" : 17
+          }, {
+            "item" : "1 Times Sq",
+            "count" : 16
+          }, {
+            "item" : "1500 Broadway",
+            "count" : 15
+          }, {
+            "item" : "1515 Broadway",
+            "count" : 14
+          }, {
+            "item" : "1530 Broadway",
+            "count" : 13
+          }, {
+            "item" : "1535 Broadway",
+            "count" : 12
+          }, {
+            "item" : "1540 Broadway",
+            "count" : 11
+          }, {
+            "item" : "1567 Broadway",
+            "count" : 10
+          }, {
+            "item" : "1568 Broadway",
+            "count" : 9
+          }, {
+            "item" : "2 Times Sq",
+            "count" : 8
+          }, {
+            "item" : "253 W 42nd St",
+            "count" : 7
+          }, {
+            "item" : "7 Times Sq",
+            "count" : 6
+          }, {
+            "item" : "1557 Broadway",
+            "count" : 5
+          }, {
+            "item" : "1632 Broadway",
+            "count" : 4
+          }, {
+            "item" : "1652 Broadway",
+            "count" : 3
+          }, {
+            "item" : "1674 Broadway",
+            "count" : 2
+          }, {
+            "item" : "165 W 47th St",
+            "count" : 1
+          } ],
+          "smallest" : "1460 Broadway"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351818,
+        "name" : "Location Description",
+        "dataTypeName" : "text",
+        "fieldName" : "location_description",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643418,
+        "width" : 340,
+        "cachedContents" : {
+          "non_null" : 137,
+          "largest" : "Wrapped around the corner of 44th Street.",
+          "null" : 47,
+          "top" : [ {
+            "item" : "South side of 42nd facing north",
+            "count" : 20
+          }, {
+            "item" : "North side of 42nd facing south",
+            "count" : 19
+          }, {
+            "item" : "NW corner of Broadway and 42nd, facing east",
+            "count" : 18
+          }, {
+            "item" : "Turkey tourism",
+            "count" : 17
+          }, {
+            "item" : "Seventh Ave between 47th-48th Sts, facing west",
+            "count" : 16
+          }, {
+            "item" : "NE Corner of 47th St at Seventh, facing south",
+            "count" : 15
+          }, {
+            "item" : "Benneton",
+            "count" : 14
+          }, {
+            "item" : "Coca-Cola Corner of 49th and Seventh",
+            "count" : 13
+          } ],
+          "smallest" : "2 panels"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351819,
+        "name" : "Location",
+        "dataTypeName" : "text",
+        "fieldName" : "location",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643419,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 184,
+          "largest" : "Upper Sev",
+          "null" : 0,
+          "top" : [ {
+            "item" : "42nd/Below",
+            "count" : 20
+          }, {
+            "item" : "Bowtie",
+            "count" : 19
+          }, {
+            "item" : "Upper Bway",
+            "count" : 18
+          }, {
+            "item" : "Upper Sev",
+            "count" : 17
+          } ],
+          "smallest" : "42nd/Below"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351820,
+        "name" : "Height",
+        "dataTypeName" : "text",
+        "fieldName" : "height",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643420,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 161,
+          "largest" : "Under 65 Ft",
+          "null" : 23,
+          "top" : [ {
+            "item" : "Marquee",
+            "count" : 20
+          }, {
+            "item" : "Under 65 Ft",
+            "count" : 19
+          }, {
+            "item" : "Above 65 Ft",
+            "count" : 18
+          } ],
+          "smallest" : "Above 65 Ft"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351821,
+        "name" : "Type",
+        "dataTypeName" : "text",
+        "fieldName" : "type",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643421,
+        "width" : 148,
+        "cachedContents" : {
+          "non_null" : 184,
+          "largest" : "Vinyl",
+          "null" : 0,
+          "top" : [ {
+            "item" : "LED",
+            "count" : 20
+          }, {
+            "item" : "Vinyl",
+            "count" : 19
+          } ],
+          "smallest" : "LED"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351822,
+        "name" : "#",
+        "dataTypeName" : "number",
+        "fieldName" : "_1",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643422,
+        "width" : 112,
+        "cachedContents" : {
+          "non_null" : 184,
+          "average" : "1.233695652173913",
+          "largest" : "13",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1",
+            "count" : 20
+          }, {
+            "item" : "3",
+            "count" : 19
+          }, {
+            "item" : "2",
+            "count" : 18
+          }, {
+            "item" : "5",
+            "count" : 17
+          }, {
+            "item" : "13",
+            "count" : 16
+          }, {
+            "item" : "4",
+            "count" : 15
+          } ],
+          "smallest" : "1",
+          "sum" : "227"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351823,
+        "name" : "Width",
+        "dataTypeName" : "number",
+        "fieldName" : "width",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643423,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 175,
+          "average" : "43.11428571428571",
+          "largest" : "320",
+          "null" : 9,
+          "top" : [ {
+            "item" : "30",
+            "count" : 20
+          }, {
+            "item" : "24",
+            "count" : 19
+          }, {
+            "item" : "18",
+            "count" : 18
+          }, {
+            "item" : "40",
+            "count" : 17
+          }, {
+            "item" : "35",
+            "count" : 16
+          }, {
+            "item" : "38",
+            "count" : 15
+          }, {
+            "item" : "100",
+            "count" : 14
+          }, {
+            "item" : "15",
+            "count" : 13
+          }, {
+            "item" : "12",
+            "count" : 12
+          }, {
+            "item" : "26",
+            "count" : 11
+          }, {
+            "item" : "14",
+            "count" : 10
+          }, {
+            "item" : "28",
+            "count" : 9
+          }, {
+            "item" : "16",
+            "count" : 8
+          }, {
+            "item" : "44",
+            "count" : 7
+          }, {
+            "item" : "52",
+            "count" : 6
+          }, {
+            "item" : "45",
+            "count" : 5
+          }, {
+            "item" : "136",
+            "count" : 4
+          }, {
+            "item" : "25",
+            "count" : 3
+          }, {
+            "item" : "48",
+            "count" : 2
+          }, {
+            "item" : "36",
+            "count" : 1
+          } ],
+          "smallest" : "4",
+          "sum" : "7545"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351824,
+        "name" : "__Height",
+        "dataTypeName" : "number",
+        "fieldName" : "_height_1",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643424,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 175,
+          "average" : "39.41714285714286",
+          "largest" : "200",
+          "null" : 9,
+          "top" : [ {
+            "item" : "10",
+            "count" : 20
+          }, {
+            "item" : "18",
+            "count" : 19
+          }, {
+            "item" : "50",
+            "count" : 18
+          }, {
+            "item" : "40",
+            "count" : 17
+          }, {
+            "item" : "25",
+            "count" : 16
+          }, {
+            "item" : "24",
+            "count" : 15
+          }, {
+            "item" : "16",
+            "count" : 14
+          }, {
+            "item" : "65",
+            "count" : 13
+          }, {
+            "item" : "20",
+            "count" : 12
+          }, {
+            "item" : "12",
+            "count" : 11
+          }, {
+            "item" : "32",
+            "count" : 10
+          }, {
+            "item" : "45",
+            "count" : 9
+          }, {
+            "item" : "15",
+            "count" : 8
+          }, {
+            "item" : "28",
+            "count" : 7
+          }, {
+            "item" : "44",
+            "count" : 6
+          }, {
+            "item" : "36",
+            "count" : 5
+          }, {
+            "item" : "54",
+            "count" : 4
+          }, {
+            "item" : "30",
+            "count" : 3
+          }, {
+            "item" : "57",
+            "count" : 2
+          }, {
+            "item" : "48",
+            "count" : 1
+          } ],
+          "smallest" : "4",
+          "sum" : "6898"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351825,
+        "name" : "SF",
+        "dataTypeName" : "number",
+        "fieldName" : "sf",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643425,
+        "width" : 124,
+        "cachedContents" : {
+          "non_null" : 184,
+          "average" : "2013.25",
+          "largest" : "16000",
+          "null" : 0,
+          "top" : [ {
+            "item" : "480",
+            "count" : 20
+          }, {
+            "item" : "2000",
+            "count" : 19
+          }, {
+            "item" : "900",
+            "count" : 18
+          }, {
+            "item" : "1344",
+            "count" : 17
+          }, {
+            "item" : "1200",
+            "count" : 16
+          }, {
+            "item" : "468",
+            "count" : 15
+          }, {
+            "item" : "300",
+            "count" : 14
+          }, {
+            "item" : "720",
+            "count" : 13
+          }, {
+            "item" : "750",
+            "count" : 12
+          }, {
+            "item" : "1152",
+            "count" : 11
+          }, {
+            "item" : "320",
+            "count" : 10
+          }, {
+            "item" : "600",
+            "count" : 9
+          }, {
+            "item" : "800",
+            "count" : 8
+          }, {
+            "item" : "2850",
+            "count" : 7
+          }, {
+            "item" : "1080",
+            "count" : 6
+          }, {
+            "item" : "4056",
+            "count" : 5
+          }, {
+            "item" : "1980",
+            "count" : 4
+          } ],
+          "smallest" : "40",
+          "sum" : "370438"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351826,
+        "name" : "Note/Photo",
+        "dataTypeName" : "text",
+        "fieldName" : "note_photo",
+        "position" : 12,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643426,
+        "width" : 220,
+        "cachedContents" : {
+          "non_null" : 143,
+          "largest" : "Wraps around corner",
+          "null" : 41,
+          "top" : [ {
+            "item" : "IMG_8937",
+            "count" : 20
+          }, {
+            "item" : "IMG_8929",
+            "count" : 19
+          }, {
+            "item" : "IMG_8923",
+            "count" : 18
+          }, {
+            "item" : "IMG_8924",
+            "count" : 17
+          }, {
+            "item" : "IMG_8915",
+            "count" : 16
+          }, {
+            "item" : "IMG_8925",
+            "count" : 15
+          }, {
+            "item" : "IMG_8912",
+            "count" : 14
+          }, {
+            "item" : "IMG_8911",
+            "count" : 13
+          }, {
+            "item" : "IMG_8900",
+            "count" : 12
+          }, {
+            "item" : "IMG_8899",
+            "count" : 11
+          }, {
+            "item" : "IMG_8894",
+            "count" : 10
+          }, {
+            "item" : "IMG_8888",
+            "count" : 9
+          }, {
+            "item" : "IMG_8901",
+            "count" : 8
+          } ],
+          "smallest" : "IMG_8862"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351827,
+        "name" : "_# ",
+        "dataTypeName" : "number",
+        "fieldName" : "_2",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643427,
+        "width" : 136,
+        "cachedContents" : {
+          "non_null" : 17,
+          "average" : "0.7647058823529412",
+          "largest" : "2",
+          "null" : 167,
+          "top" : [ {
+            "item" : "0",
+            "count" : 20
+          }, {
+            "item" : "1",
+            "count" : 19
+          }, {
+            "item" : "2",
+            "count" : 18
+          } ],
+          "smallest" : "0",
+          "sum" : "13"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351828,
+        "name" : "_Width",
+        "dataTypeName" : "number",
+        "fieldName" : "_width",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643428,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 17,
+          "average" : "24.17647058823529",
+          "largest" : "130",
+          "null" : 167,
+          "top" : [ {
+            "item" : "0",
+            "count" : 20
+          }, {
+            "item" : "25",
+            "count" : 19
+          }, {
+            "item" : "38",
+            "count" : 18
+          }, {
+            "item" : "6",
+            "count" : 17
+          }, {
+            "item" : "35",
+            "count" : 16
+          }, {
+            "item" : "16",
+            "count" : 15
+          }, {
+            "item" : "28",
+            "count" : 14
+          }, {
+            "item" : "30",
+            "count" : 13
+          }, {
+            "item" : "130",
+            "count" : 12
+          }, {
+            "item" : "26",
+            "count" : 11
+          }, {
+            "item" : "24",
+            "count" : 10
+          } ],
+          "smallest" : "0",
+          "sum" : "411"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351829,
+        "name" : "_Height",
+        "dataTypeName" : "number",
+        "fieldName" : "_height_2",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643429,
+        "width" : 184,
+        "cachedContents" : {
+          "non_null" : 17,
+          "average" : "26.29411764705882",
+          "largest" : "95",
+          "null" : 167,
+          "top" : [ {
+            "item" : "0",
+            "count" : 20
+          }, {
+            "item" : "40",
+            "count" : 19
+          }, {
+            "item" : "25",
+            "count" : 18
+          }, {
+            "item" : "4",
+            "count" : 17
+          }, {
+            "item" : "33",
+            "count" : 16
+          }, {
+            "item" : "44",
+            "count" : 15
+          }, {
+            "item" : "42",
+            "count" : 14
+          }, {
+            "item" : "29",
+            "count" : 13
+          }, {
+            "item" : "48",
+            "count" : 12
+          }, {
+            "item" : "30",
+            "count" : 11
+          }, {
+            "item" : "15",
+            "count" : 10
+          }, {
+            "item" : "95",
+            "count" : 9
+          } ],
+          "smallest" : "0",
+          "sum" : "447"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351830,
+        "name" : "_SF",
+        "dataTypeName" : "number",
+        "fieldName" : "_sf",
+        "position" : 16,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643430,
+        "width" : 136,
+        "cachedContents" : {
+          "non_null" : 183,
+          "average" : "91.98907103825137",
+          "largest" : "6240",
+          "null" : 1,
+          "top" : [ {
+            "item" : "0",
+            "count" : 20
+          }, {
+            "item" : "1000",
+            "count" : 19
+          }, {
+            "item" : "950",
+            "count" : 18
+          }, {
+            "item" : "48",
+            "count" : 17
+          }, {
+            "item" : "1155",
+            "count" : 16
+          }, {
+            "item" : "704",
+            "count" : 15
+          }, {
+            "item" : "1176",
+            "count" : 14
+          }, {
+            "item" : "870",
+            "count" : 13
+          }, {
+            "item" : "6240",
+            "count" : 12
+          }, {
+            "item" : "780",
+            "count" : 11
+          }, {
+            "item" : "360",
+            "count" : 10
+          }, {
+            "item" : "2375",
+            "count" : 9
+          } ],
+          "smallest" : "0",
+          "sum" : "16834"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351831,
+        "name" : "TOTAL",
+        "dataTypeName" : "number",
+        "fieldName" : "total",
+        "position" : 17,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643431,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 184,
+          "average" : "1.304347826086957",
+          "largest" : "15",
+          "null" : 0,
+          "top" : [ {
+            "item" : "1",
+            "count" : 20
+          }, {
+            "item" : "3",
+            "count" : 19
+          }, {
+            "item" : "2",
+            "count" : 18
+          }, {
+            "item" : "5",
+            "count" : 17
+          }, {
+            "item" : "15",
+            "count" : 16
+          }, {
+            "item" : "4",
+            "count" : 15
+          } ],
+          "smallest" : "1",
+          "sum" : "240"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351832,
+        "name" : "TOTAL SF",
+        "dataTypeName" : "number",
+        "fieldName" : "total_sf",
+        "position" : 18,
+        "renderTypeName" : "number",
+        "tableColumnId" : 1643432,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 184,
+          "average" : "2104.739130434783",
+          "largest" : "18200",
+          "null" : 0,
+          "top" : [ {
+            "item" : "480",
+            "count" : 20
+          }, {
+            "item" : "2000",
+            "count" : 19
+          }, {
+            "item" : "900",
+            "count" : 18
+          }, {
+            "item" : "256",
+            "count" : 17
+          }, {
+            "item" : "1600",
+            "count" : 16
+          }, {
+            "item" : "720",
+            "count" : 15
+          }, {
+            "item" : "1500",
+            "count" : 14
+          }, {
+            "item" : "750",
+            "count" : 13
+          }, {
+            "item" : "300",
+            "count" : 12
+          }, {
+            "item" : "1200",
+            "count" : 11
+          }, {
+            "item" : "1152",
+            "count" : 10
+          }, {
+            "item" : "320",
+            "count" : 9
+          }, {
+            "item" : "600",
+            "count" : 8
+          }, {
+            "item" : "800",
+            "count" : 7
+          }, {
+            "item" : "5225",
+            "count" : 6
+          }, {
+            "item" : "1080",
+            "count" : 5
+          }, {
+            "item" : "4056",
+            "count" : 4
+          }, {
+            "item" : "1980",
+            "count" : 3
+          } ],
+          "smallest" : "40",
+          "sum" : "387272"
+        },
+        "format" : { }
+      }, {
+        "id" : 3351833,
+        "name" : "TOTAL BY TYPE",
+        "dataTypeName" : "text",
+        "fieldName" : "total_by_type",
+        "position" : 19,
+        "renderTypeName" : "text",
+        "tableColumnId" : 1643433,
+        "width" : 256,
+        "cachedContents" : {
+          "non_null" : 2,
+          "largest" : "274,896",
+          "null" : 182,
+          "top" : [ {
+            "item" : "112,376",
+            "count" : 20
+          }, {
+            "item" : "274,896",
+            "count" : 19
+          } ],
+          "smallest" : "112,376"
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Update" : {
+            "Update Frequency" : "As needed"
+          },
+          "Dataset Information" : {
+            "Agency" : "Other"
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rdfSubject" : "0",
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "5fuc-pqz2",
+        "displayName" : "NYC OpenData",
+        "roleName" : "administrator",
+        "screenName" : "NYC OpenData",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "5fuc-pqz2",
+        "displayName" : "NYC OpenData",
+        "roleName" : "administrator",
+        "screenName" : "NYC OpenData",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "tags" : [ "times square alliance", "times square", "crossroads", "crossroads of the world", "nyc", "new york city", "new york", "manhattan", "theater", "food", "screens", "pedestrian", "entertainment", "tourism", "signage" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 1, "27AFCA53-AF62-48CC-83DA-EE2A70DA54DE", 1, 1320056374, "392904", 1320056374, "392904", "{\n}", "Modell's", "234 W 42nd St", null, "42nd/Below", "Marquee", "LED", "1", "30", "10", "300", "IMG_8993", null, null, null, "0", "1", "300", null ]
+, [ 2, "B307BFDC-20AB-4E2B-AE75-FC3EE88654E5", 2, 1320056374, "392904", 1320056374, "392904", "{\n}", "Ripley's Odditorium Screen (3 LED Screens)", "234 W 42nd St", "Marquee Level", "42nd/Below", "Marquee", "LED", "3", null, null, "44", null, null, null, null, "0", "3", "44", null ]
+, [ 3, "A43A5904-01B5-4619-B3D0-C2E2D6625170", 3, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Chevys corner (1/9 LED center)", "243 W 42nd St", "NE corner of 42nd St and 8th Ave", "42nd/Below", "Under 65 Ft", "LED", "1", "11", "11", "121", "IMG_8998", null, null, null, "0", "1", "121", null ]
+, [ 4, "84EC772E-EDAD-4D16-B27C-5F1323F33DDC", 4, 1320056374, "392904", 1320056374, "392904", "{\n}", "CBS/Panasonic", "253 W 42nd", "Above Cold Stone", "42nd/Below", "Under 65 Ft", "LED", "1", "24", "18", "432", "IMG_8994", null, null, null, null, "1", "432", null ]
+, [ 5, "8182E664-7462-4650-BD82-83B04042A223", 5, 1320056374, "392904", 1320056374, "392904", "{\n}", "Skechers", "3 Times Sq", "Above 42nd/7th subway entrance", "42nd/Below", "Under 65 Ft", "LED", "1", "4", "10", "40", "IMG_8985", null, null, null, "0", "1", "40", null ]
+, [ 6, "CE80A79A-4812-45C1-A31A-23E758EBF54A", 6, 1320056374, "392904", 1320056374, "392904", "{\n}", "NBC Screen", "5 Times Sq", "Above Champs Sports", "42nd/Below", "Above 65 Ft", "LED", "1", "18", "13", "234", "IMG_8979", null, null, null, "0", "1", "234", null ]
+, [ 7, "AB59F324-9DF8-4695-BB71-FD528F71F6A4", 7, 1320056374, "392904", 1320056374, "392904", "{\n}", "Toshiba Below Highest Toshba Screen", "1 Times Sq", "Below Highest Toshiba Screen", "Bowtie", "Above 65 Ft", "LED", "1", "51", "53", "2703", null, null, null, null, "0", "1", "2703", null ]
+, [ 8, "6B6D14B9-33FF-4DE3-96D5-FCEE1333FBDC", 8, 1320056374, "392904", 1320056374, "392904", "{\n}", "Toshiba  (Highest Screen)", "1 Times Sq", "Tallest Point on 1 Times Sq.", "Bowtie", "Above 65 Ft", "LED", "1", "40", "53", "2120", null, null, null, null, "0", "1", "2120", null ]
+, [ 9, "25DA36F9-D9D4-4738-B60C-736C2AE40D29", 9, 1320056374, "392904", 1320056374, "392904", "{\n}", "Anheuser-Busch Budlight Screen", "1 Times Sq", "High Level- Above Sony News Corp", "Bowtie", "Above 65 Ft", "LED", "1", "35", "50", "1750", "IMG_8953", null, null, null, "0", "1", "1750", null ]
+, [ 10, "CA0CAE1E-1060-4708-BB1C-69C47253C44F", 10, 1320056374, "392904", 1320056374, "392904", "{\n}", "Sony News Corp Screen", "1 Times Sq", "Below the Budlight Screen", "Bowtie", "Under 65 Ft", "LED", "1", "35", "40", "1400", null, null, null, null, "0", "1", "1400", null ]
+, [ 11, "C5BF5306-73A5-4DD0-866E-440EC2BC8996", 11, 1320056374, "392904", 1320056374, "392904", "{\n}", "Walgreens ALL THREE", "1 Times Sq", "42nd Street Screen", "Bowtie", "Above 65 Ft", "LED", "3", null, null, "16000", "TOTAL", null, null, null, "0", "3", "16000", null ]
+, [ 12, "478E4576-DFAE-4CF4-9DE6-390F74FF00C2", 12, 1320056374, "392904", 1320056374, "392904", "{\n}", "Wrigley's Screen", "1500 Broadway", "to the right of ABC above Sephora", "Bowtie", "Under 65 Ft", "LED", "1", "90", "35", "3150", "IMG_8950", "0", "0", "0", "0", "1", "3150", null ]
+, [ 13, "9AA88A1B-1F6F-4547-AA67-A9A398ED7A07", 13, 1320056374, "392904", 1320056374, "392904", "{\n}", "JVC Screen", "1500 Broadway", "to the right of Wringly's above Starbucks", "Bowtie", "Under 65 Ft", "LED", "1", "34", "19", "646", null, "0", "0", "0", "0", "1", "646", null ]
+, [ 14, "4554B385-F9A4-46FD-B4E7-4C1057DC14C1", 14, 1320056374, "392904", 1320056374, "392904", "{\n}", "ABC Screen", "1500 Broadway", "Wrapped around the corner of 44th Street.", "Bowtie", "Under 65 Ft", "LED", "1", null, null, "3685", "IMG_8948/9", null, null, null, "0", "1", "3685", null ]
+, [ 15, "C03F3840-59AF-45E8-B7EB-DD9851C7BF6C", 15, 1320056374, "392904", 1320056374, "392904", "{\n}", "Hard Rock Cafe Screen", "1501 Broadway", "On the corner of 43rd and 7th", "Bowtie", "Marquee", "LED", "1", "35", "7", "245", "IMG_8947", null, null, null, "0", "1", "245", null ]
+, [ 16, "3D2F015B-8E4F-496C-B566-80AC5F259AC1", 16, 1320056374, "392904", 1320056374, "392904", "{\n}", "Aeropostale", "1515 Broadway", "Northwest Corner of 45th & 7th", "Bowtie", "Marquee", "LED", "1", "120", "18", "2160", "IMG_8940", null, null, null, "0", "1", "2160", null ]
+, [ 17, "E8C75FB2-66E0-451E-BF09-C2B4E7CD0FC5", 17, 1320056374, "392904", 1320056374, "392904", "{\n}", "MTV Video Screen", "1530 Broadway", "Above the Footlocker", "Bowtie", "Under 65 Ft", "LED", "1", "37", "25", "925", null, null, null, null, "0", "1", "925", null ]
+, [ 18, "5FF7EA0F-640B-4C79-AC51-0F9A584B3938", 18, 1320056374, "392904", 1320056374, "392904", "{\n}", "Toys R Us Screen (2 panels)", "1530 Broadway", "At the entrance of Toys R Us", "Bowtie", "Marquee", "LED", "2", "38", "8", "304", "IMG_8941", null, null, null, "0", "2", "304", null ]
+, [ 19, "31762853-3623-4432-A9C0-BAC35B21BB14", 19, 1320056374, "392904", 1320056374, "392904", "{\n}", "Kodak Screen", "1535 Broadway", "Within the Vinyl Billboard for Kodak", "Bowtie", "Under 65 Ft", "LED", "1", "23", "24", "552", null, "0", "0", "0", "0", "1", "552", null ]
+, [ 20, "222D7EA5-A9FD-44F4-945A-668FEBB55B88", 20, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis - Bank of America (Broadway @46th)", "1535 Broadway", "Bank of America Screen", "Bowtie", "Under 65 Ft", "LED", "1", "40", "70", "2800", "IMG_8930", null, null, null, "0", "1", "2800", null ]
+, [ 21, "10CDE291-E378-45A9-AEE0-77F27390718B", 21, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis - Planters (Broadway & 45th)", "1535 Broadway", null, "Bowtie", "Under 65 Ft", "LED", "1", "17", "23", "391", "IMG_8938", null, null, null, "0", "1", "391", null ]
+, [ 22, "2106789F-4D04-4F6D-AC0C-6C9278EDD2FF", 22, 1320056374, "392904", 1320056374, "392904", "{\n}", "Disney", "1540 Broadway", "East 7th Avenue between 45 & 46", "Bowtie", "Under 65 Ft", "LED", "1", null, null, "2250", "IMG_8932", null, null, null, "0", "1", "2250", null ]
+, [ 23, "56A00BBD-F062-47BF-9E23-46C165EA73D3", 23, 1320056374, "392904", 1320056374, "392904", "{\n}", "Forever 21 Main Screen", "1540 Broadway", "Video Camera Billboard of the Plaza", "Bowtie", "Under 65 Ft", "LED", "1", "58", "38", "2204", "IMG_8933", null, null, null, "0", "1", "2204", null ]
+, [ 24, "EC84ADE7-EA66-4735-A449-6B0504E1E671", 24, 1320056374, "392904", 1320056374, "392904", "{\n}", "Forever 21 Decorative Pane Screen", "1540 Broadway", "Centrally Located on block", "Bowtie", "Marquee", "LED", "1", "35", "16", "560", "IMG_8933", null, null, null, "0", "1", "560", null ]
+, [ 25, "1359D4E3-86A7-4F0D-A4D2-63E3A84D0171", 25, 1320056374, "392904", 1320056374, "392904", "{\n}", "LG Screen", "1540 Broadway", "Above Planet Holleywood", "Bowtie", "Above 65 Ft", "LED", "1", "84", "50", "4200", "Wraps around corner", null, null, null, "0", "1", "4200", null ]
+, [ 26, "CA06B174-3017-45EB-A799-7A5812F38D54", 26, 1320056374, "392904", 1320056374, "392904", "{\n}", "American Eagle (two screens)", "1551 Broadway", "Main Screen- Above entrance and Store.", "Bowtie", "Above 65 Ft", "LED", "2", null, null, "15000", "TOTAL", null, null, null, "0", "2", "15000", null ]
+, [ 27, "D9CCF399-72D2-4D68-8D39-CEDA72F76E52", 27, 1320056374, "392904", 1320056374, "392904", "{\n}", "CNN Screen", "1567 Broadway", "Above Blue Fin", "Bowtie", "Under 65 Ft", "LED", "1", "40", "40", "1600", null, "0", "0", "0", "0", "1", "1600", null ]
+, [ 28, "A7142610-C89D-4F55-8700-BBEE842D8357", 28, 1320056374, "392904", 1320056374, "392904", "{\n}", "W Hotel", "1567 Broadway", null, "Bowtie", null, "LED", "1", "30", "40", "1200", null, null, null, null, "0", "1", "1200", null ]
+, [ 29, "BD620FAF-B36E-4D66-93A3-5C5DF8D8BC72", 29, 1320056374, "392904", 1320056374, "392904", "{\n}", "Spectacular Design", "1568 Broadway", "Southeast corner of 7th and 47th", "Bowtie", "Above 65 Ft", "LED", "1", "100", "50", "5000", "IMG_8921", null, null, null, "0", "1", "5000", null ]
+, [ 30, "79B42D09-5489-4EFE-9A90-4D2E2BE6B808", 30, 1320056374, "392904", 1320056374, "392904", "{\n}", "Hershey's Screen", "1593 Broadway", "Text Strip on Hershey's building", "Bowtie", "Marquee", "LED", "1", "15", "30", "450", null, "0", "0", "0", "0", "1", "450", null ]
+, [ 31, "C77EA1DF-375E-4A08-9B91-CC329873F5B6", 31, 1320056374, "392904", 1320056374, "392904", "{\n}", "Prudential Screen", "2 Times Sq", "Highest Screen behind TKTS booth", "Bowtie", "Above 65 Ft", "LED", "1", "37", "25", "925", "IMG_8922", null, null, null, "0", "1", "925", null ]
+, [ 32, "28D6E20E-5CE7-43E9-ABB3-68396C0E0AC3", 32, 1320056374, "392904", 1320056374, "392904", "{\n}", "Samsung Screen", "2 Times Sq", "Above Hyundai, behind TKTS Booth", "Bowtie", "Above 65 Ft", "LED", "1", "41", "65", "2665", null, null, null, null, "0", "1", "2665", null ]
+, [ 33, "A52ADBF1-F0C2-434D-852C-54F6A2823560", 33, 1320056374, "392904", 1320056374, "392904", "{\n}", "Coca-Cola Screen", "2 Times Sq", "Above Hyundai Screen", "Bowtie", "Under 65 Ft", "LED", "1", "44", "65", "2860", null, null, null, null, "0", "1", "2860", null ]
+, [ 34, "9C80E17E-9F70-4A77-9562-9349950641E1", 34, 1320056374, "392904", 1320056374, "392904", "{\n}", "Hyundai Screen (2 LED panels)", "2 Times Sq", "Lowest Screen on Stack by TKTS Booth", "Bowtie", "Marquee", "LED", "2", "18", "24", "432", "IMG_8926", null, null, null, "0", "2", "432", null ]
+, [ 35, "D63B994C-9262-44B0-9D33-2AC86EA1E844", 35, 1320056374, "392904", 1320056374, "392904", "{\n}", "HSBC Screen", "2 Times Sq", "Below Prudential", "Bowtie", "Above 65 Ft", "LED", "1", "41", "48", "1968", "IMG_8922", null, null, null, "0", "1", "1968", null ]
+, [ 36, "DC368266-33C2-4955-BA85-581AD2122FB9", 36, 1320056374, "392904", 1320056374, "392904", "{\n}", "Reuters Screen", "3 Times Sq", "5 LED Screens Wrapped around Corner", "Bowtie", "Under 65 Ft", "LED", "5", null, null, "7674", null, null, null, null, "0", "5", "7674", null ]
+, [ 37, "4C6525B6-8030-4442-8396-239EA764B2B9", 37, 1320056374, "392904", 1320056374, "392904", "{\n}", "Chase Screen (wrapped around 3 Times Sq)", "3 Times Sq", "Above Quicksilver Marquee", "Bowtie", "Under 65 Ft", "LED", "1", "70", "20", "1400", "IMG_8976", null, null, null, "0", "1", "1400", null ]
+, [ 38, "B56F1874-078A-4489-9838-2CA3569E4475", 38, 1320056374, "392904", 1320056374, "392904", "{\n}", "Quiksilver", "3 Times Sq", "Below Chase", "Bowtie", "Marquee", "LED", "1", "100", "10", "1000", "IMG_8976", null, null, null, "0", "1", "1000", null ]
+, [ 39, "03E2F60A-9DBE-4320-B6FE-9992AE6F03F9", 39, 1320056374, "392904", 1320056374, "392904", "{\n}", "NASDAQ Main Screen", "4 Times Sq", "Main Screen on Corner of 43rd", "Bowtie", "Under 65 Ft", "LED", "1", "120", "84", "10080", null, null, null, null, "0", "1", "10080", null ]
+, [ 40, "006082BE-1A32-4813-A4B4-83D9EE139027", 40, 1320056374, "392904", 1320056374, "392904", "{\n}", "Military Recruitment Center", "Military Island", "Broadway and 43rd St", "Bowtie", "Under 65 Ft", "LED", "1", "9", "12", "108", "IMG_8946", null, null, null, "0", "1", "108", null ]
+, [ 41, "DE264D91-1147-42C8-8F7D-8C18E7C34342", 41, 1320056374, "392904", 1320056374, "392904", "{\n}", "Morgan Stanely Screen", "1585 Broadway", "One Screen on the Corner of 48th", "Upper Bway", "Above 65 Ft", "LED", "1", "12", "24", "288", null, null, null, null, "0", "1", "288", null ]
+, [ 42, "FFDF69BA-8646-4E19-A404-837FE58297C2", 42, 1320056374, "392904", 1320056374, "392904", "{\n}", "M&M Screen", "1600 Broadway", "Corner of 48th Street", "Upper Bway", "Under 65 Ft", "LED", "1", "40", "51", "2040", null, null, null, null, "0", "1", "2040", null ]
+, [ 43, "E057B2D8-14F9-4079-AA22-15345240D05D", 43, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Spotlogith", "1610 Broadway", "North of M&M's", "Upper Bway", "Above 65 Ft", "LED", "1", "24", "32", "768", "IMG_8870", null, null, null, "0", "1", "768", null ]
+, [ 44, "0D519EA3-F829-47BD-A48E-F19B6E1853EE", 44, 1320056374, "392904", 1320056374, "392904", "{\n}", "M&M Screen (Seventh Ave)", "1600 Broadway", "Corner of 48th Street & Seventh Ave", "Upper Sev", "Under 65 Ft", "LED", "1", "26", "27", "702", null, null, null, null, "0", "1", "702", null ]
+, [ 45, "6F90EAD9-6B20-45FE-A0C7-E51783246E28", 45, 1320056374, "392904", 1320056374, "392904", "{\n}", "Barclays (wrap-around)", "745 Seventh Ave", null, "Upper Sev", "Marquee", "LED", "1", null, null, "7000", "IMG_8890-3", null, null, null, "0", "1", "7000", "112,376" ]
+, [ 46, "AE0723F0-DB8B-4BE2-9614-3FCA605D9F46", 46, 1320056374, "392904", 1320056374, "392904", "{\n}", "1460 Broadway (Broadway between 41st & 42nd)", "1460 Broadway", null, "42nd/Below", null, "Vinyl", "1", "14", "96", "1344", null, null, null, null, "0", "1", "1344", null ]
+, [ 47, "3C20FFE7-8A7F-460E-9E59-2C45A9922CD3", 47, 1320056374, "392904", 1320056374, "392904", "{\n}", "Mary Poppins", "216 W 42nd St", "South side of 42nd facing north", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "24", "40", "960", "IMG_8987", null, null, null, "0", "1", "960", null ]
+, [ 48, "0A28521F-C018-4386-A7CE-935B57C7879E", 48, 1320056374, "392904", 1320056374, "392904", "{\n}", "Lion King", "216 W 42nd St", "South side of 42nd facing north", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "20", "24", "480", "IMG_8987", null, null, null, "0", "1", "480", null ]
+, [ 49, "3E1E1166-A543-4E5A-B181-6617000F00BB", 49, 1320056374, "392904", 1320056374, "392904", "{\n}", "Former Marc Ecko space (Spider Man)", "217 W 42nd", "North side of 42nd facing south", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "100", "40", "4000", "IMG_9001-2", null, null, null, "0", "1", "4000", null ]
+, [ 50, "46904CAA-20DD-4794-9EAE-C534FAECCAA1", 50, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Madame Tussauds (2 panels left/right)", "234 W 42nd St", "South side of 42nd facing north", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "15", "45", "675", "IMG_8988-9", "1", "25", "40", "1000", "2", "1675", null ]
+, [ 51, "C6A8C6C5-AC25-4B57-BC62-BBAB41F7D165", 51, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Ripleys marquee lower", "234 W 42nd St", "South side of 42nd facing north", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "30", "15", "450", "IMG_8990", null, null, null, "0", "1", "450", null ]
+, [ 52, "2DD2408C-1F0A-40DC-81FE-D821F44CED12", 52, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Dave/Busters (Pacquiao / Moseley)", "234 W 42nd St", "South side of 42nd facing north", "42nd/Below", "Under 65 Ft", "Vinyl", "2", "80", "50", "4000", "IMG_8991-2", null, null, null, "0", "2", "4000", null ]
+, [ 53, "A86555FC-12D6-4198-BEA9-57D3FDCE2DB3", 53, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Chevys (Bad Teacher)", "243 W 42nd St", "North side of 42nd facing south", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "64", "28", "1792", "IMG_8997", null, null, null, "0", "1", "1792", null ]
+, [ 54, "E45A3811-0EEF-4C85-859D-45039B98F2D0", 54, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Chevys corner (8/9 vinyl)", "243 W 42nd St", "NE corner of 42nd St and 8th Ave", "42nd/Below", "Under 65 Ft", "Vinyl", "1", null, null, "968", "IMG_8998", null, null, null, "0", "1", "968", null ]
+, [ 55, "7F3A3A1D-5502-4EAF-829C-360AEBD92282", 55, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Cold Stone west of CBS LED lower (Good Wife)", "253 W 42nd St", "North side of 42nd facing south", "42nd/Below", "Above 65 Ft", "Vinyl", "1", "30", "18", "540", "IMG_8995", null, null, null, "0", "1", "540", null ]
+, [ 56, "A07C0B4C-E801-42B7-9014-505126FE40F7", 56, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Cold Stone west of CBS LED higher (Costa Rica)", "253 W 42nd St", "North side of 42nd facing south", "42nd/Below", "Above 65 Ft", "Vinyl", "1", "30", "16", "480", "IMG_8995", null, null, null, "0", "1", "480", null ]
+, [ 57, "71FD3D91-0D03-4398-9DD1-045D2C6A2724", 57, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Dallas BBQ east of CBS LED lower (Prom Girl)", "253 W 42nd St", "North side of 42nd facing south", "42nd/Below", "Above 65 Ft", "Vinyl", "1", "26", "15", "390", "IMG_8996", null, null, null, "0", "1", "390", null ]
+, [ 58, "C783AA14-1CF9-461B-8E94-9EB571E30108", 58, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Dallas BBQ east of CBS LED middle (Turkish Airlines)", "253 W 42nd St", "North side of 42nd facing south", "42nd/Below", "Above 65 Ft", "Vinyl", "1", "30", "10", "300", "IMG_8996", null, null, null, "0", "1", "300", null ]
+, [ 59, "69F8A18E-D579-4475-9148-A9CEB37C1189", 59, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Dallas BBQ east of CBS LED largest (Farmville)", "253 W 42nd St", "North side of 42nd facing south", "42nd/Below", "Above 65 Ft", "Vinyl", "1", "40", "44", "1760", "IMG_8996", null, null, null, "0", "1", "1760", null ]
+, [ 60, "612C574E-BD4C-4163-BEEC-3DFF960E1B00", 60, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Red Lobster (Style Network)", "5 Times Sq", "NW corner of Seventh Ave and 41st St", "42nd/Below", "Under 65 Ft", "Vinyl", "2", "96", "36", "3456", "IMG_8968", null, null, null, "0", "2", "3456", null ]
+, [ 61, "B8AEDF7C-41FF-4821-857F-1355638E53E8", 61, 1320056374, "392904", 1320056374, "392904", "{\n}", "Next to Champs (Nissan)", "5 Times Sq", "SW corner of 7th Ave and 42nd St, facing east", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "28", "32", "896", "IMG_8969", null, null, null, "0", "1", "896", null ]
+, [ 62, "09375F8D-BABD-45D4-B2C9-BDD592A31D5B", 62, 1320056374, "392904", 1320056374, "392904", "{\n}", "Next to Champs 42nd St (Nissan)", "5 Times Sq", "South side of 42nd St near 7th Ave, facing north", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "96", "40", "3840", "IMG_8981", null, null, null, "0", "1", "3840", null ]
+, [ 63, "6EC190F2-8267-47E4-AFBA-B98D745F639C", 63, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Champs wraparound (NBC)", "5 Times Sq", "SW Corner of 42nd and Seventh Ave", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "24", "40", "960", "IMG_8979", null, null, null, "0", "1", "960", null ]
+, [ 64, "6132C014-96C5-4F50-92FC-8DC8F16DA77D", 64, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Ann Taylor Loft wraparound (Brooklyn Bridge)", "7 Times Sq", "SW corner of Bway and 42nd St", "42nd/Below", "Under 65 Ft", "Vinyl", "2", "55", "45", "2475", "IMG_8959/64", null, null, null, "0", "2", "2475", null ]
+, [ 65, "0B5B25F3-5E20-4124-8C58-C348EA19AEF5", 65, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Ann Taylor Loft (Clear Vision)", "7 Times Sq", "Bway between 42nd-41st facing east", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "18", "36", "648", "IMG_8964", null, null, null, "0", "1", "648", null ]
+, [ 66, "66EDAA3A-304C-483B-9F5C-9D24110AA8D5", 66, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above subway entrance (Best Buy)", "7 Times Sq", "South side of 42nd St between 7th/Broadway", "42nd/Below", "Under 65 Ft", "Vinyl", "2", "30", "54", "1620", "IMG_8960-1", null, null, null, "0", "2", "1620", null ]
+, [ 67, "52DDA021-A08E-4087-8E80-75BCED4254D8", 67, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above subway entrance (Casio)", "7 Times Sq", "SE corner of 42nd and 7th Ave", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "15", "54", "810", "IMG_8962", null, null, null, "0", "1", "810", null ]
+, [ 68, "A0FC39DE-1B12-4A2A-A67B-8E26C2649B4F", 68, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above The Counter wraparound 2 panels (Casio)", "7 Times Sq", "NW corner of Broadway and 41st St", "42nd/Below", "Under 65 Ft", "Vinyl", "2", "55", "40", "2200", "IMG_8966-7", null, null, null, "0", "2", "2200", null ]
+, [ 69, "B1EE7212-6A93-4F28-AF23-1D0929EDA918", 69, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Ruby Tuesday (Central Park)", "7 Times Sq", "NE corner of 41st St and 7th Ave", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "40", "32", "1280", "IMG_8970", null, null, null, "0", "1", "1280", null ]
+, [ 70, "3DD794FA-0186-491A-959E-6F125052E0B6", 70, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Ruby Tuesday (Best Buy)", "7 Times Sq", "Seventh Ave between 41st-42nd Sts, facing west", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "32", "36", "1152", "IMG_8971", null, null, null, "0", "1", "1152", null ]
+, [ 71, "7B267891-536A-4779-8E36-6BEDA54F301F", 71, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Ann Taylor Loft 7th Ave side (phones)", "7 Times Sq", "Seventh Ave between 41st-42nd Sts, facing west", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "36", "28", "1008", "IMG_8972", null, null, null, "0", "1", "1008", null ]
+, [ 72, "D126A45A-D726-475B-A949-18407B6D87E5", 72, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above subway entrance 7th Ave side (drums)", "7 Times Sq", "SE corner of 42nd and 7th Ave, facing west", "42nd/Below", "Under 65 Ft", "Vinyl", "1", "42", "50", "2100", "IMG_8973", null, null, null, "0", "1", "2100", null ]
+, [ 73, "B0927181-EC12-4000-946B-9933C74F02F8", 73, 1320056374, "392904", 1320056374, "392904", "{\n}", "Dunkin Donuts", "1 Times Sq", "Above Anheuser Busch", "Bowtie", "Above 65 Ft", "Vinyl", "1", "35", "45", "1575", "IMG_8953", null, null, null, "0", "1", "1575", null ]
+, [ 74, "7F9BE5CA-A4DE-4557-8AF3-6696D3D0DDF3", 74, 1320056374, "392904", 1320056374, "392904", "{\n}", "Kia ad", "1 Times Sq", "Lowest below Sony", "Bowtie", "Marquee", "Vinyl", "1", "35", "118", "4130", "IMG_8951", null, null, null, "0", "1", "4130", null ]
+, [ 75, "94362B6D-5848-4F2A-89BE-AD2AB0AFB382", 75, 1320056374, "392904", 1320056374, "392904", "{\n}", "1 Times Sq south of Walgreens (Too Big to Fail)", "1 Times Sq", "NW corner of Broadway and 42nd, facing east", "Bowtie", "Marquee", "Vinyl", "1", "36", "26", "936", "IMG_8954", null, null, null, "0", "1", "936", null ]
+, [ 76, "D4BE6DC0-7852-4A12-ACA4-3DC2994F50AC", 76, 1320056374, "392904", 1320056374, "392904", "{\n}", "1 Times Sq south of Walgreens middle wraparound Empire City", "1 Times Sq", "NW corner of Broadway and 42nd, facing east", "Bowtie", "Under 65 Ft", "Vinyl", "3", "100", "40", "4000", "IMG_8954/75", null, null, null, "0", "3", "4000", null ]
+, [ 77, "F934F66F-9B33-44A9-8D0A-23B7909F23B9", 77, 1320056374, "392904", 1320056374, "392904", "{\n}", "1 Times Sq south of Walgreens highest wraparound (Kia)", "1 Times Sq", "NW corner of Broadway and 42nd, facing east", "Bowtie", "Above 65 Ft", "Vinyl", "3", "100", "52", "5200", "IMG_8955/75", null, null, null, "0", "3", "5200", null ]
+, [ 78, "B7C18D45-5D21-4130-86E3-09B6A3E0F6F4", 78, 1320056374, "392904", 1320056374, "392904", "{\n}", "1 Times Square south of Walgreens west side (empty)", "1 Times Sq", "West façade of 7th Ave and 42nd St", "Bowtie", "Under 65 Ft", "Vinyl", "1", "32", "20", "640", "IMG_9003", null, null, null, "0", "1", "640", null ]
+, [ 79, "BACCE4BF-0F3F-4A37-B7AD-A11CB0987CB3", 79, 1320056374, "392904", 1320056374, "392904", "{\n}", "ABC vinyl facing north", "1500 Broadway", "SE corner of 44th and Broadway", "Bowtie", "Under 65 Ft", "Vinyl", "1", "18", "50", "900", "IMG_8942", null, null, null, "0", "1", "900", null ]
+, [ 80, "AD76905D-C857-4674-88CF-E0131681AADD", 80, 1320056374, "392904", 1320056374, "392904", "{\n}", "Toys 'R' Us Storefront (1514 Broadway)", "1514 Broadway", "Pirates/Carib", "Bowtie", "Under 65 Ft", "Vinyl", "1", "30", "165", "4950", "IMG_9004", null, null, null, "0", "1", "4950", null ]
+, [ 81, "A1A77228-5078-4CA1-97D5-DD52C7E6EE11", 81, 1320056374, "392904", 1320056374, "392904", "{\n}", "MTV Studio (Lion King)", "1515 Broadway", null, "Bowtie", "Under 65 Ft", "Vinyl", "1", "54", "24", "1296", "IMG_9005", null, null, null, "0", "1", "1296", null ]
+, [ 82, "FCE815E9-98B1-475D-8B25-AB9ED875A9F7", 82, 1320056374, "392904", 1320056374, "392904", "{\n}", "MTV Studio (MTV)", "1515 Broadway", null, "Bowtie", "Marquee", "Vinyl", "1", "38", "12", "456", "IMG_9005", null, null, null, "0", "1", "456", null ]
+, [ 83, "9048C694-4758-4DAF-B72A-866E8E1F5C77", 83, 1320056374, "392904", 1320056374, "392904", "{\n}", "1515 Broadway (Candies Foundation)", "1515 Broadway", "Northwest corner of Broadway & 44th St", "Bowtie", "Under 65 Ft", "Vinyl", "1", "14", "33", "462", "IMG_8943", null, null, null, "0", "1", "462", null ]
+, [ 84, "7EB5092D-D26B-4DA9-B28D-D1F86D967DB0", 84, 1320056374, "392904", 1320056374, "392904", "{\n}", "1515 Broadway (Aeropostale)", "1515 Broadway", "45th Street at Broadway", "Bowtie", "Under 65 Ft", "Vinyl", "1", "13", "35", "455", "IMG_8936", null, null, null, "0", "1", "455", null ]
+, [ 85, "B7B48266-953E-4332-960B-AFC1A9866BC1", 85, 1320056374, "392904", 1320056374, "392904", "{\n}", "1515 Broadway (Rocawear)", "1515 Broadway", "Broadway at 45th St", "Bowtie", "Under 65 Ft", "Vinyl", "1", "20", "28", "560", "IMG_8936", null, null, null, "0", "1", "560", null ]
+, [ 86, "09A97300-305B-4EB6-97D6-DA371FD2C682", 86, 1320056374, "392904", 1320056374, "392904", "{\n}", "MTV Left Sign", "1530 Broadway", "Above the Footlocker", "Bowtie", "Under 65 Ft", "Vinyl", "1", "12", "25", "300", null, null, null, null, "0", "1", "300", null ]
+, [ 87, "392A8121-0152-4FA2-9028-E6EFA5F712E1", 87, 1320056374, "392904", 1320056374, "392904", "{\n}", "MTV Right Sign", "1530 Broadway", "Above the Footlocker", "Bowtie", "Under 65 Ft", "Vinyl", "1", "24", "25", "600", null, null, null, null, "0", "1", "600", null ]
+, [ 88, "9DA2B9BB-D8C4-4438-BC90-5842C3F6ECC9", 88, 1320056374, "392904", 1320056374, "392904", "{\n}", "Swatch ", "1530 Broadway", "Above Swatch marquee", "Bowtie", "Above 65 Ft", "Vinyl", "1", "50", "25", "1250", "IMG_8937", null, null, null, "0", "1", "1250", null ]
+, [ 89, "3D70CA4A-B93D-44A3-8756-D932B1D58D42", 89, 1320056374, "392904", 1320056374, "392904", "{\n}", "Stomp", "1530 Broadway", "45th Street at SE corner of Seventh Ave", "Bowtie", "Above 65 Ft", "Vinyl", "1", "24", "20", "480", "IMG_8939", null, null, null, "0", "1", "480", null ]
+, [ 90, "EF12C2B3-473B-4932-9DC1-6532B6EB417C", 90, 1320056374, "392904", 1320056374, "392904", "{\n}", "Pepsi highest above Swatch", "1530 Broadway", "2 panels", "Bowtie", "Above 65 Ft", "Vinyl", "1", "38", "54", "2052", "IMG_8937", "1", "38", "25", "950", "2", "3002", null ]
+, [ 91, "63C6B89C-5EB2-4587-9912-B419CE49076F", 91, 1320056374, "392904", 1320056374, "392904", "{\n}", "Pepsi above MTV 44 1/2", "1530 Broadway", "2 panels", "Bowtie", "Above 65 Ft", "Vinyl", "2", "40", "68", "2720", "IMG_8937", null, null, null, "0", "2", "2720", null ]
+, [ 92, "3A7E2065-07A7-43A7-96C6-F32DCB00873A", 92, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis Rotunda - Southpole (Broadway between 45th & 46th)", "1535 Broadway", "Hanook", "Bowtie", null, "Vinyl", "1", "31", "98", "3038", "IMG_8931", null, null, null, "0", "1", "3038", null ]
+, [ 93, "989A6718-05E8-49DC-9626-77B9E27C2883", 93, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis - North Tower (Broadway @ 46th)", "1535 Broadway", "UFC", "Bowtie", null, "Vinyl", "1", "63", "44", "2772", "IMG_8930", null, null, null, "0", "1", "2772", null ]
+, [ 94, "7956927A-0A58-49DE-BA0A-BDF517D04566", 94, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis (West 45th Street)", "1535 Broadway", "Car ad", "Bowtie", "Under 65 Ft", "Vinyl", "1", "40", "50", "2000", "IMG_8938", null, null, null, "0", "1", "2000", null ]
+, [ 95, "8D8B9A04-E435-4C4D-9C99-FCF4D78A3F4B", 95, 1320056374, "392904", 1320056374, "392904", "{\n}", "Mariott Marquis (Broadway @ 45th)", "1535 Broadway", "Kodak vinyl", "Bowtie", null, "Vinyl", "1", "40", "60", "2400", "IMG_8931", null, null, null, "0", "1", "2400", null ]
+, [ 96, "CD664D4E-563B-4325-B056-C85E84F3D5CE", 96, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis (1535 Broadway between 45th & 46th St)", "1535 Broadway", "Green Lantern", "Bowtie", null, "Vinyl", "1", "70", "44", "3080", "IMG_8938", null, null, null, "0", "1", "3080", null ]
+, [ 97, "EA597420-C352-4840-9E1B-F355600441B0", 97, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis (1535 Broadway @ 46th St)", "1535 Broadway", "Sportsmanship", "Bowtie", null, "Vinyl", "1", "66", "45", "2937", "IMG_8930", null, null, null, "0", "1", "2937", null ]
+, [ 98, "46FABDBF-0CE1-4E72-8E63-33F168048BFC", 98, 1320056374, "392904", 1320056374, "392904", "{\n}", "Marriott Marquis - Column Wraps (Broadway between 45th & 46th)", "1535 Broadway", null, "Bowtie", null, "Vinyl", "13", "8", "4", "416", null, "2", "6", "4", "48", "15", "464", null ]
+, [ 99, "60674356-7BCB-4CB2-8C16-557C39A91984", 99, 1320056374, "392904", 1320056374, "392904", "{\n}", "Planet Hollwood (1540 Broadway)", "1540 Broadway", "True Crime", "Bowtie", null, "Vinyl", "2", "30", "68", "4080", "IMG_8934/9007", null, null, null, "0", "2", "4080", null ]
+, [ 100, "86869558-342E-4144-98E7-18D78106D6E6", 100, 1320056374, "392904", 1320056374, "392904", "{\n}", "1540 Broadway above Bertelsmann marquee", "1540 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "28", "18", "504", "IMG_8929", null, null, null, "0", "1", "504", null ]
+, [ 101, "33922D0E-D445-4F12-A6F4-5F2CD7754EFC", 101, 1320056374, "392904", 1320056374, "392904", "{\n}", "1540 Broadway next to Disney screen (TD Ameritrade)", "1540 Broadway", null, "Bowtie", "Under 65 Ft", "Vinyl", "1", "10", "24", "240", "IMG_8929", null, null, null, "0", "1", "240", null ]
+, [ 102, "5B5D229D-C1F1-4218-BA7C-DEDE0CA8EFEB", 102, 1320056374, "392904", 1320056374, "392904", "{\n}", "1540 Broadway next to Planet Hollywood marquee (empty)", "1540 Broadway", "45th Street at Seventh Ave", "Bowtie", "Under 65 Ft", "Vinyl", "1", "12", "30", "360", "IMG_9007", null, null, null, "0", "1", "360", null ]
+, [ 103, "3B649397-A7C2-4FD3-97A4-28096E5C4575", 103, 1320056374, "392904", 1320056374, "392904", "{\n}", "Mamma Mia", "1550 Broadway", "Corner (both sides) of Seventh Ave and 46th", "Bowtie", "Under 65 Ft", "Vinyl", "2", "38", "30", "1140", "IMG_8929", null, null, null, "0", "2", "1140", null ]
+, [ 104, "1CE1D35E-C1DF-4465-A07A-3AFFF785A237", 104, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Mamma Mia (Memphis)", "1550 Broadway", "NE corner of Seventh Ave at 46th St", "Bowtie", "Above 65 Ft", "Vinyl", "1", "16", "30", "480", "IMG_8929", null, null, null, "0", "1", "480", null ]
+, [ 105, "6CC1859C-B462-43E6-B0E2-57636DAD2D8D", 105, 1320056374, "392904", 1320056374, "392904", "{\n}", "1552 Broadway @ 46th st", "1552 Broadway", "Master Chef", "Bowtie", "Above 65 Ft", "Vinyl", "1", "44", "45", "1980", "IMG_8928", null, null, null, "0", "1", "1980", null ]
+, [ 106, "412CCACC-476C-4860-9772-58D4C57B404A", 106, 1320056374, "392904", 1320056374, "392904", "{\n}", "1552 Broadway @ 46th st", "1552 Broadway", "Glee", "Bowtie", "Above 65 Ft", "Vinyl", "1", "35", "20", "700", "IMG_8927", "1", "35", "33", "1155", "2", "1855", null ]
+, [ 107, "F449ED5D-6298-4AAA-A502-3B1DDDD2C10F", 107, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Grand Slam (lowest)", "1557 Broadway", "Turkey tourism", "Bowtie", "Under 65 Ft", "Vinyl", "1", "60", "30", "1800", "IMG_8923", null, null, null, "0", "1", "1800", null ]
+, [ 108, "DF3C741E-D55C-4D77-94B4-4AA9AE34124A", 108, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Grand Slam (middle)", "1557 Broadway", "Turkey tourism", "Bowtie", "Above 65 Ft", "Vinyl", "1", "52", "26", "1352", "IMG_8923", null, null, null, "0", "1", "1352", null ]
+, [ 109, "68A99C5A-36E4-4ADE-8EA3-4F04B411C16C", 109, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Grand Slam (highest)", "1557 Broadway", "Turkey tourism", "Bowtie", "Above 65 Ft", "Vinyl", "1", "52", "14", "728", "IMG_8923", null, null, null, "0", "1", "728", null ]
+, [ 110, "FF03EAB1-95E8-4A0D-88E5-BD86AB401D10", 110, 1320056374, "392904", 1320056374, "392904", "{\n}", "1560 Broadway- Colombian Coffee (Broadway@46th)", "1560 Broadway", null, "Bowtie", null, "Vinyl", "1", "75", "80", "6000", null, null, null, null, "0", "1", "6000", null ]
+, [ 111, "A882887B-1906-44D0-BE32-ACC6D74C175C", 111, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Roxy deli marquee", "1565 Broadway", "Million Dollar Quartet", "Bowtie", "Under 65 Ft", "Vinyl", "1", "15", "30", "450", "IMG_8924", null, null, null, "0", "1", "450", null ]
+, [ 112, "0BB004A4-80EC-4908-A2E8-E618F0BBBDAA", 112, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Roxy deli (highest)", "1565 Broadway", "Avenue Q", "Bowtie", "Above 65 Ft", "Vinyl", "1", "15", "18", "270", "IMG_8924", null, null, null, "0", "1", "270", null ]
+, [ 113, "FA3E3A42-EC48-446A-A7FC-480FE6614A03", 113, 1320056374, "392904", 1320056374, "392904", "{\n}", "W hotel - East Face (1567 Broadway @ 47th) ", "1567 Broadway", "Billy Elliot", "Bowtie", "Above 65 Ft", "Vinyl", "1", "52", "28", "1456", "IMG_8924", null, null, null, "0", "1", "1456", null ]
+, [ 114, "E7C9309B-62EE-40EF-B997-8A3041EEC215", 114, 1320056374, "392904", 1320056374, "392904", "{\n}", "Broadway Spire - Argent mortgage company (1567 Broadway @ 47th St)", "1567 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "160", "20", "3200", null, null, null, null, "0", "1", "3200", null ]
+, [ 115, "E529E49E-15F7-402D-8B23-F76BFB2AF39B", 115, 1320056374, "392904", 1320056374, "392904", "{\n}", "Broadway Spire - W Hotel (1567 Broadway @ 47th)", "1567 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "57", "55", "3135", null, null, null, null, "0", "1", "3135", null ]
+, [ 116, "D9B62AD8-88D0-4B9B-BF62-9327DB5C92F6", 116, 1320056374, "392904", 1320056374, "392904", "{\n}", "W hotel Times Square (Broadway @ 47th Street)", "1567 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "45", "52", "2340", null, null, null, null, "0", "1", "2340", null ]
+, [ 117, "AEA355C6-7935-4051-8A6B-E14DB52FBF6B", 117, 1320056374, "392904", 1320056374, "392904", "{\n}", "Broadway Spire W Hotel (1567 Broadway btw 46th & 47th)", "1567 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "136", "57", "7752", null, null, null, null, "0", "1", "7752", null ]
+, [ 118, "F65A0B10-4316-4F8A-AD90-26E157F18B90", 118, 1320056374, "392904", 1320056374, "392904", "{\n}", "Broadway Spire W Hotel (1567 Broadway btw 46th & 47th)", "1567 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "136", "57", "7752", null, null, null, null, "0", "1", "7752", null ]
+, [ 119, "12945D1D-25BF-41E2-896C-11050AC143D5", 119, 1320056374, "392904", 1320056374, "392904", "{\n}", "Broadway Spire W Hotel Sean John (1567 Broadway @ 47th)", "1567 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "172", "54", "9288", null, null, null, null, "0", "1", "9288", null ]
+, [ 120, "8E26EE2C-1C61-4B8E-80DF-96201FEAB1D3", 120, 1320056374, "392904", 1320056374, "392904", "{\n}", "Broadway Spire W Hotel (1567 Broadway btw 46th & 47th)", "1567 Broadway", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "320", "47", "15040", null, null, null, null, "0", "1", "15040", null ]
+, [ 121, "B1CD07D2-23A6-4CBF-AF79-6AA95A2B9D73", 121, 1320056374, "392904", 1320056374, "392904", "{\n}", "Doubletree (Black Eyed Peas)", "1568 Broadway", "47th Street at Seventh Ave", "Bowtie", "Under 65 Ft", "Vinyl", "1", "14", "28", "392", "IMG_8915", null, null, null, "0", "1", "392", null ]
+, [ 122, "F925334A-5893-4667-B665-DF3846B0D980", 122, 1320056374, "392904", 1320056374, "392904", "{\n}", "Doubletree wraparound (Lonely Island)", "1568 Broadway", "Corner of 47th and Seventh, above marquee", "Bowtie", "Under 65 Ft", "Vinyl", "1", "40", "28", "1120", "IMG_8915", null, null, null, "0", "1", "1120", null ]
+, [ 123, "AEFD5533-BAF3-4091-9C47-4A3B49094638", 123, 1320056374, "392904", 1320056374, "392904", "{\n}", "Doubletree above wraparound (NBC/Voice)", "1568 Broadway", "Corner of 47th and Seventh, highest facing north", "Bowtie", "Above 65 Ft", "Vinyl", "1", "26", "30", "780", "IMG_8916", null, null, null, "0", "1", "780", null ]
+, [ 124, "6096EBFE-F1EA-453D-AAD0-5749A942FBDB", 124, 1320056374, "392904", 1320056374, "392904", "{\n}", "Doubletree south of wraparound (Addams Family)", "1568 Broadway", "Seventh Ave at 47th St, facing west", "Bowtie", "Under 65 Ft", "Vinyl", "1", "13", "28", "364", "IMG_8919", null, null, null, "0", "1", "364", null ]
+, [ 125, "77D5454D-DB49-42A0-85B8-30C2892E6260", 125, 1320056374, "392904", 1320056374, "392904", "{\n}", "Doubletree above Palace marquee (Priscilla/Chicago)", "1568 Broadway", "Seventh Ave between 46th-47th Sts, facing west", "Bowtie", "Under 65 Ft", "Vinyl", "2", "18", "28", "504", "IMG_8919", null, null, null, "0", "2", "504", null ]
+, [ 126, "0D1AA7CD-35AB-42CB-8AB1-9C41FB8495EC", 126, 1320056374, "392904", 1320056374, "392904", "{\n}", "Hyundai (4 vinyl panels total both sides)", "2 Times Sq", "Broadway and Seventh Ave Sides", "Bowtie", "Marquee", "Vinyl", "4", "18", "48", "864", "IMG_8926", null, null, null, "0", "4", "864", null ]
+, [ 127, "D7D10985-1347-4191-9743-DAA14D64D611", 127, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Olive Garden marquee (Rain)", "2 Times Sq", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "18", "40", "720", "IMG_8925", null, null, null, "0", "1", "720", null ]
+, [ 128, "4BE45427-E14F-4F4A-9C88-40EC55F0E254", 128, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Rain (Inglot)", "2 Times Sq", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "22", "24", "528", "IMG_8925", null, null, null, "0", "1", "528", null ]
+, [ 129, "998A0335-1398-4F0B-B4B4-C6B51165A6C5", 129, 1320056374, "392904", 1320056374, "392904", "{\n}", "Corona (both Broadway and Seventh Ave sides)", "2 Times Sq", null, "Bowtie", "Above 65 Ft", "Vinyl", "1", "16", "44", "704", "IMG_8925", "1", "16", "44", "704", "2", "1408", null ]
+, [ 130, "A40A2D0B-4FFB-4CA3-B90A-475BA2AB8574", 130, 1320056374, "392904", 1320056374, "392904", "{\n}", "Wraparound above Chase LED", "3 Times Sq", "Ricoh/Japan", "Bowtie", "Above 65 Ft", "Vinyl", "1", "24", "60", "1440", "IMG_8978", null, null, null, "0", "1", "1440", null ]
+, [ 131, "68BFD79C-E3BA-43DA-B0A1-93E2B8B509EE", 131, 1320056374, "392904", 1320056374, "392904", "{\n}", "Wraparound on 42nd and Broadway", "4 Times Sq", "LA Noire", "Bowtie", "Under 65 Ft", "Vinyl", "1", "80", "30", "2400", "IMG_8958", null, null, null, "0", "1", "2400", null ]
+, [ 132, "2E3C0B91-0933-4E4D-8C0C-C84BB5C408C3", 132, 1320056374, "392904", 1320056374, "392904", "{\n}", "Broadway @ 42nd Street", "4 Times Square", "Izod", "Bowtie", "Under 65 Ft", "Vinyl", "1", "40", "105", "4200", "IMG_8956-7", null, null, null, "0", "1", "4200", null ]
+, [ 133, "0740AFC7-7BDB-4380-990C-51B2024C587B", 133, 1320056374, "392904", 1320056374, "392904", "{\n}", "Hershey's other", "1593 Broadway", "Custom signage", "Upper Bway", "Above 65 Ft", "Vinyl", "1", null, null, "2000", "IMG_8862", null, null, null, "0", "1", "2000", null ]
+, [ 134, "0E73B735-81C0-4A6D-8A5E-B3EE139A558A", 134, 1320056374, "392904", 1320056374, "392904", "{\n}", "Crowne Plaza (Broadway & 49th)", "1601 Broadway", null, "Upper Bway", "Above 65 Ft", "Vinyl", "1", "25", "108", "2700", null, null, null, null, "0", "1", "2700", null ]
+, [ 135, "21BEFD6E-C95C-43AF-938A-1340AAE75788", 135, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Mama Sbarro's (Amare Stoudemire wraparound)", "1610 Broadway", "Corner of Broadway and 48th St", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "100", "32", "3200", "IMG_8869/8899", null, null, null, "0", "1", "3200", null ]
+, [ 136, "9F5D25A4-1620-45F9-8F64-A3FF6C194AC8", 136, 1320056374, "392904", 1320056374, "392904", "{\n}", "Brill Building (Broadway @ 50th St)", "1619 Broadway", null, "Upper Bway", null, "Vinyl", "1", "40", "50", "2000", null, null, null, null, "0", "1", "2000", null ]
+, [ 137, "C92FC16B-7C49-4F3C-8C20-6BD2DB0426E6", 137, 1320056374, "392904", 1320056374, "392904", "{\n}", "Brill Building (Broadway between 49th & 50th)", "1619 Broadway", null, "Upper Bway", null, "Vinyl", "1", "45", "65", "2925", null, null, null, null, "0", "1", "2925", null ]
+, [ 138, "607F2675-AB58-4238-9793-9359673B440F", 138, 1320056374, "392904", 1320056374, "392904", "{\n}", "Morgan Stanley Building (1626 Broadway btw 49th & 50th)", "1626 Broadway", "Falling skies", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "29", "125", "3625", "IMG_8872/3", null, null, null, "0", "1", "3625", null ]
+, [ 139, "149D3ABB-AC6C-4CB9-8431-381FC3A45024", 139, 1320056374, "392904", 1320056374, "392904", "{\n}", "Morgan Stanley Building (1626 Broadway @ 49th )", "1626 Broadway", "Celeb Cruises", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "44", "36", "1584", "IMG_8871", null, null, null, "0", "1", "1584", null ]
+, [ 140, "B9F81524-D2B8-4866-A4C9-56AD147A4C8B", 140, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Famiglia pizzeria", "1628 Broadway", "Ugg ad", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "45", "20", "900", "IMG_8874", null, null, null, "0", "1", "900", null ]
+, [ 141, "48837AF4-EE60-4C86-9654-B0B3B29ED3B3", 141, 1320056374, "392904", 1320056374, "392904", "{\n}", "Winter Garden Theatre (Broadway @ 50th)", "1632 Broadway", "Ugg", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "28", "48", "1344", "IMG_8889", null, null, null, "0", "1", "1344", null ]
+, [ 142, "079CB891-7CAF-4511-B1E2-3615979720F2", 142, 1320056374, "392904", 1320056374, "392904", "{\n}", "Winter Garden Theatre Package (Broadway@50th)", "1632 Broadway", "Telecharge", "Upper Bway", "Above 65 Ft", "Vinyl", "1", "28", "48", "1344", "IMG_8876", "1", "28", "42", "1176", "2", "2520", null ]
+, [ 143, "AB702F5B-91EF-4C95-B424-60EAC22D398B", 143, 1320056374, "392904", 1320056374, "392904", "{\n}", "Winter Garden Theatre (Broadway @ 50th)", "1632 Broadway", null, "Upper Bway", null, "Vinyl", "1", "28", "42", "1176", null, null, null, null, "0", "1", "1176", null ]
+, [ 144, "807574C9-98CC-4D83-921E-C58A275FD268", 144, 1320056374, "392904", 1320056374, "392904", "{\n}", "Winter Garden Theatre (7th Avenue between 50th & 51st)", "1632 Broadway", null, "Upper Bway", null, "Vinyl", "1", "30", "40", "1200", null, null, null, null, "0", "1", "1200", null ]
+, [ 145, "973BE8EA-C8BE-49D0-A70D-FEDAD27BE75D", 145, 1320056374, "392904", 1320056374, "392904", "{\n}", "Winter Garden Theatre (7th Avenue between 50th & 51st)", "1632 Broadway", null, "Upper Bway", null, "Vinyl", "1", "30", "29", "870", null, null, null, null, "0", "1", "870", null ]
+, [ 146, "A110F7DA-4D97-4234-AA4C-8D4D4C678F26", 146, 1320056374, "392904", 1320056374, "392904", "{\n}", "Winter Garden Theatre Package (7th Avenue & Broadway Btw 50th & 51st)", "1632 Broadway", null, "Upper Bway", null, "Vinyl", "2", "28", "48", "2688", null, "1", "28", "42", "1176", "3", "3864", null ]
+, [ 147, "17C5F6F8-677C-4B79-B453-10A93017BC27", 147, 1320056374, "392904", 1320056374, "392904", "{\n}", "Winter Garden Theatre Package (7th Avenue & Broadway Btw 50th & 51st)", "1632 Broadway", null, "Upper Bway", null, "Vinyl", "1", "30", "40", "1200", null, "1", "30", "29", "870", "2", "2070", null ]
+, [ 148, "044F02F8-6AAA-4FED-BF70-93F840FE7531", 148, 1320056374, "392904", 1320056374, "392904", "{\n}", "1650 Broadway (Broadway @ West 50th St)", "1650 Broadway", "Fast Five", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "130", "92", "11960", "IMG_8879-81", "1", "130", "48", "6240", "2", "18200", null ]
+, [ 149, "D7DE6FAB-50AE-418A-88D4-832B1C7A6C38", 149, 1320056374, "392904", 1320056374, "392904", "{\n}", "Sheraton Manahattan (Broadway & 52nd)", "1652 Broadway", "Maybelline", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "26", "18", "468", "IMG_8885", null, null, null, "0", "1", "468", null ]
+, [ 150, "71B2BC9A-371D-4F1A-BE11-8246F7FFD51B", 150, 1320056374, "392904", 1320056374, "392904", "{\n}", "Sheraton Manhattan (Broadway & 51st)", "1652 Broadway", "Time", "Upper Bway", null, "Vinyl", "1", "26", "30", "780", "IMG_8887", null, null, null, "0", "1", "780", null ]
+, [ 151, "FDCC19B7-C531-48C7-B55D-EEF71681EC0D", 151, 1320056374, "392904", 1320056374, "392904", "{\n}", "Sheraton Manhattan (Broadway & 51st & 52nd)", "1652 Broadway", null, "Upper Bway", null, "Vinyl", "1", "26", "18", "468", null, "1", "26", "30", "780", "2", "1248", null ]
+, [ 152, "6D29E3AD-AC68-4241-90EB-A91DDAB90CE7", 152, 1320056374, "392904", 1320056374, "392904", "{\n}", "Sheraton (Broadway between 51st and 52nd)", "1652 Broadway", null, "Upper Bway", null, "Vinyl", "1", "25", "200", "5000", null, null, null, null, "0", "1", "5000", null ]
+, [ 153, "651F7AFA-63AF-4238-BABA-6D2DCC798CA6", 153, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Times Square Church wraparound (blank)", "1657 Broadway", null, "Upper Bway", "Above 65 Ft", "Vinyl", "1", "200", "15", "3000", "IMG_8877-8", null, null, null, "0", "1", "3000", null ]
+, [ 154, "1A368474-DF23-4687-9F2A-2E814988D0DC", 154, 1320056374, "392904", 1320056374, "392904", "{\n}", "Coca-cola ad", "1674 Broadway", null, "Upper Bway", "Marquee", "Vinyl", "1", "48", "16", "768", "IMG_8882", null, null, null, "0", "1", "768", null ]
+, [ 155, "263681A1-2AF4-4844-B57F-597806EFFCC4", 155, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Crown Deli (blank)", "1674 Broadway", "Facing NE corner of Broadway and 52nd", "Upper Bway", "Above 65 Ft", "Vinyl", "1", "15", "30", "450", "IMG_8883", null, null, null, "0", "1", "450", null ]
+, [ 156, "1BEE2346-F8F3-417A-B301-03D1BC40AD3C", 156, 1320056374, "392904", 1320056374, "392904", "{\n}", "Seastreak", "1674 Broadway", "Facing south, 52nd St", "Upper Bway", "Under 65 Ft", "Vinyl", "1", "38", "12", "456", "IMG_8884", null, null, null, "0", "1", "456", null ]
+, [ 157, "CDD67E6A-9FCB-45F5-9541-8977C6808AFC", 157, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Crown Deli highest (New York running)", "1674 Broadway", "Facing Broadway ", "Upper Bway", "Above 65 Ft", "Vinyl", "1", "15", "20", "300", "IMG_8886", null, null, null, "0", "1", "300", null ]
+, [ 158, "185D478B-9B63-4782-A24A-E2287479EBD8", 158, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Tad's (Wicked)", "165 W 47th St", "Seventh Ave between 47th-48th Sts, facing west", "Upper Sev", "Under 65 Ft", "Vinyl", "1", "38", "36", "1368", "IMG_8913", null, null, null, "0", "1", "1368", null ]
+, [ 159, "0117F368-44A7-4702-8358-422A51499421", 159, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Tad's (Jersey Boys)", "165 W 47th St", "Seventh Ave between 47th-48th Sts, facing west", "Upper Sev", "Above 65 Ft", "Vinyl", "1", "38", "28", "1064", "IMG_8914", null, null, null, "0", "1", "1064", null ]
+, [ 160, "4046DA46-F3EE-4BB8-BA1A-BD7A9088E6F0", 160, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Sbarro lower (Phantom)", "165 W 47th St", "NE Corner of 47th St at Seventh, facing south", "Upper Sev", "Under 65 Ft", "Vinyl", "1", "36", "36", "1296", "IMG_8915", null, null, null, "0", "1", "1296", null ]
+, [ 161, "82B6F9BB-B241-4FFE-B411-AAAF0CD80CEF", 161, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Sbarro upper (Catch Me If You Can)", "165 W 47th St", "NE Corner of 47th St at Seventh, facing south", "Upper Sev", "Above 65 Ft", "Vinyl", "1", "36", "28", "1008", "IMG_8915", null, null, null, "0", "1", "1008", null ]
+, [ 162, "E6DE4160-CE9E-4AEB-8894-FCD81562CE67", 162, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Tad's 47th St entrance lower (Rain)", "165 W 47th St", "47th Street east of Seventh Ave, facing south", "Upper Sev", "Under 65 Ft", "Vinyl", "1", "22", "36", "792", "IMG_8915", null, null, null, "0", "1", "792", null ]
+, [ 163, "A1F13473-5130-4860-8B72-4FDA36EB4C86", 163, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Tad's 47th St entrance upper (Rock of Ages)", "165 W 47th St", "48th Street east of Seventh Ave, facing south", "Upper Sev", "Above 65 Ft", "Vinyl", "1", "22", "28", "616", "IMG_8915", null, null, null, "0", "1", "616", null ]
+, [ 164, "5B887BDB-7F87-4E1A-8585-44FF930E0CCB", 164, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Playland Gifts (Bed Bugs)", "711 Seventh Ave", null, "Upper Sev", "Under 65 Ft", "Vinyl", "1", "45", "20", "900", "IMG_8912", null, null, null, "0", "1", "900", null ]
+, [ 165, "9828B451-9C93-4E4C-A0ED-2F48EED4CD19", 165, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Playland Gifts highest (Avion)", "711 Seventh Ave", null, "Upper Sev", "Above 65 Ft", "Vinyl", "1", "16", "40", "640", "IMG_8912", null, null, null, "0", "1", "640", null ]
+, [ 166, "7C8D0056-D974-42B4-911A-1A13AF9A29F3", 166, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Phantom of Broadway (How to Succeed)", "711 Seventh Ave", null, "Upper Sev", "Above 65 Ft", "Vinyl", "1", "24", "64", "1536", "IMG_8912", null, null, null, "0", "1", "1536", null ]
+, [ 167, "C42E88EF-9D47-4A96-9F32-7D6B6F23B41A", 167, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Embassy Electronics (2 Guess signs)", "717 Seventh Ave", null, "Upper Sev", "Above 65 Ft", "Vinyl", "1", "15", "20", "300", "IMG_8911", "1", "24", "15", "360", "2", "660", null ]
+, [ 168, "35A8DFFA-58B9-4C00-B809-46264E022A0A", 168, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Smilers (Guess)", "719 Seventh Ave", null, "Upper Sev", "Under 65 Ft", "Vinyl", "1", "16", "16", "256", "IMG_8911", null, null, null, "0", "1", "256", null ]
+, [ 169, "B7679AAE-7C07-4F83-A233-10D377CD51DD", 169, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above TSQ Brasserie 3-panel wrap (TNT)", "721 Seventh Ave", null, "Upper Sev", "Under 65 Ft", "Vinyl", "3", "40", "40", "1600", "IMG_8904", null, null, null, "0", "3", "1600", null ]
+, [ 170, "76B93C1C-622B-4B5E-B41F-129A255FA6E5", 170, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Lace (Humane Watch.org)", "725 Seventh Ave", null, "Upper Sev", "Under 65 Ft", "Vinyl", "1", "18", "40", "720", "IMG_8902", null, null, null, "0", "1", "720", null ]
+, [ 171, "F7D548C8-E530-4B3D-A507-FA1FB0A5417C", 171, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Tonic (Nurse Jackie)", "727 Seventh Ave", null, "Upper Sev", "Under 65 Ft", "Vinyl", "1", "18", "40", "720", "IMG_8903", null, null, null, "0", "1", "720", null ]
+, [ 172, "23F62940-7C65-4296-A908-BF231369A103", 172, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above former Hawaiian Tropic (ESPN draft)", "729 Seventh Ave", "SE corner of 7th and 49th St", "Upper Sev", "Above 65 Ft", "Vinyl", "1", "15", "100", "1500", "IMG_8896-7", null, null, null, "0", "1", "1500", null ]
+, [ 173, "C40EAE63-3FF2-4B49-946D-719A7E01A9C0", 173, 1320056374, "392904", 1320056374, "392904", "{\n}", "Next to former Hawaiian Tropic (ESPN draft)", "729 Seventh Ave", "49th St near 7th Ave; facing north", "Upper Sev", "Under 65 Ft", "Vinyl", "1", "50", "15", "750", "IMG_8896", null, null, null, "0", "1", "750", null ]
+, [ 174, "54031A0A-E433-4C80-A3F7-3BA13E2435E0", 174, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above former Hawaiian Tropic (ESPN draft)", "729 Seventh Ave", "Seventh Ave south of 49th St", "Upper Sev", "Under 65 Ft", "Vinyl", "1", "30", "10", "300", "IMG_8898", null, null, null, "0", "1", "300", null ]
+, [ 175, "67028B6D-39C6-477B-B775-8D2340F7CCDF", 175, 1320056374, "392904", 1320056374, "392904", "{\n}", "On roof (Heaven on Broadway)", "729 Seventh Ave", null, "Upper Sev", "Above 65 Ft", "Vinyl", "1", "30", "40", "1200", "IMG_8909", null, null, null, "0", "1", "1200", null ]
+, [ 176, "74DC7614-EDC3-4A15-B25E-E772F7167875", 176, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Souvenirs & Gifts lowest (Home Goods)", "734 Seventh Ave", null, "Upper Sev", "Under 65 Ft", "Vinyl", "1", "48", "24", "1152", "IMG_8900", null, null, null, "0", "1", "1152", null ]
+, [ 177, "6604A0D3-F0F6-4279-B086-B23EC962BA5B", 177, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Souvenirs & Gifts middle (Home Goods)", "734 Seventh Ave", null, "Upper Sev", "Under 65 Ft", "Vinyl", "1", "32", "10", "320", "IMG_8900", null, null, null, "0", "1", "320", null ]
+, [ 178, "8F51D306-1F76-4C42-BEBE-E61FFE556B04", 178, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Souvenirs & Gifts highest (Home Goods)", "734 Seventh Ave", null, "Upper Sev", "Above 65 Ft", "Vinyl", "1", "20", "30", "600", "IMG_8900", null, null, null, "0", "1", "600", null ]
+, [ 179, "2858069E-AB70-47F8-AE89-E7EFC7FFF734", 179, 1320056374, "392904", 1320056374, "392904", "{\n}", "Above Pax wraparound (Barclays)", "740 Seventh Ave", "SW corner of 7th Ave and 49th St", "Upper Sev", "Under 65 Ft", "Vinyl", "1", "40", "20", "800", "IMG_8899", null, null, null, "0", "1", "800", null ]
+, [ 180, "1017AA22-731C-46F9-B6D9-14D504AC4B06", 180, 1320056374, "392904", 1320056374, "392904", "{\n}", "Morgan Stanley Building (750 7th Avenue)", "750 Seventh Ave", "United", "Upper Sev", "Under 65 Ft", "Vinyl", "2", "25", "57", "2850", "IMG_8894", "1", "25", "95", "2375", "3", "5225", null ]
+, [ 181, "FBC5BF4B-6047-457E-8523-6A44364A860D", 181, 1320056374, "392904", 1320056374, "392904", "{\n}", "750 Seventh Avenue (7th Avenue @50th)", "750 Seventh Ave", "Benneton", "Upper Sev", "Under 65 Ft", "Vinyl", "1", "40", "27", "1080", "IMG_8888", null, null, null, "0", "1", "1080", null ]
+, [ 182, "BCADDD54-40CA-43D4-A2AF-0F0E9B707871", 182, 1320056374, "392904", 1320056374, "392904", "{\n}", "Morgan Stanley Building - Rooftop (750 7th Avenue)", "750 Seventh Ave", null, "Upper Sev", null, "Vinyl", "1", "52", "78", "4056", null, null, null, null, "0", "1", "4056", null ]
+, [ 183, "C1696F39-F1F7-46D6-A189-2BE325C7B462", 183, 1320056374, "392904", 1320056374, "392904", "{\n}", "Morgan Stanley Building (750 7th Avenue)", "750 Seventh Ave", "Coca-Cola Corner of 49th and Seventh", "Upper Sev", null, "Vinyl", "1", "44", "45", "1980", "IMG_8901", null, null, null, "0", "1", "1980", null ]
+, [ 184, "70A35F7C-99B5-40A5-8B36-1530FCEBD6ED", 184, 1320056374, "392904", 1320056374, "392904", "{\n}", "Morgan Stanley Building (750 7th Avenue)", "750 Seventh Ave", null, "Upper Sev", null, "Vinyl", "1", "40", "50", "2000", null, null, null, null, "0", "1", "2000", "274,896" ]
+ ]
+}
