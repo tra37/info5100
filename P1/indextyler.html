@@ -1,6 +1,7 @@
 <title>Signs of Times Square</title>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
 <style>
 * { background-color: black; }
 
@@ -15,6 +16,7 @@
 <div>
   <svg id="countByBorough" height="300" width="500" style="border: 1px solid white">
   </svg><br>
+  <svg id="countByLocation" height="300" width
   <svg id="countByDay" height="500" width="500" style="border: 1px solid white"></svg>
 </div>
 
@@ -29,6 +31,18 @@ function countPerBorough(data, boro){
   return x;
 };
 
+// Returns x number of murders reported in JSON file data for location (inside
+// or outside) in borough boro
+function countByLocation(data, location, boro) {
+  var x = 0;
+  data.forEach(function(d)){
+    if(d.BORO_NM == boro){
+      if(d.LOC_OF_OCCUR_DESC = location) { x++; }''
+    };
+  }
+  return x;
+}
+
 var complaintData;
 
 d3.json("NYPD_Complaint.json", function (error, data) {
@@ -38,6 +52,7 @@ d3.json("NYPD_Complaint.json", function (error, data) {
   complaintData.forEach(function(d){
     d.CMPLNT_NUM = d.CMPLNT_NUM;
     d.BORO_NM = d.BORO_NM;
+    d.LOC_OF_OCCUR_DESC = d.LOC_OF_OCCUR_DESC;
     d.Latitude = d.Latitude;
     d.Longitude = d.Longitde;
   });

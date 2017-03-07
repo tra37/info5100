@@ -11,6 +11,8 @@
 <style>
   * {
     background-color: #d6d5d4;
+    min-width: 1000px;
+    max-width: 1000px;
   }
 
   h1, h2, h3 {
@@ -34,18 +36,46 @@
     stroke: #CCC;
     stroke-width: .5px;
   }
+
+  img {
+    position: relative;
+    width: 100%;
+  }
+
+  #title{
+    position: absolute;
+    background-color: transparent;
+    color: #d6d5d4;
+    top: 100px;
+    left: 500px;
+  }
+
+  #subtitle {
+    position: absolute;
+    background-color: transparent;
+    color: #d6d5d4;
+    top: 150px;
+    left: 500px;
+  }
 </style>
 
 <body>
+
+
   <div class="container">
-    <h1>Murders in New York City</h1>
+    <img src="newyork.jpg" alt="New York City in the fog.
+    Photo by http://bit.ly/2mCgt0z">
+    <h1 id="title">Murders in New York City</h1>
+    <p id="subtitle">Visualiztions by Pujaa Rajan and Tyler Alicea (pr338 & tra37)<br>
+    INFO 5100: Visual Analytics for the Web</p>
     <p>An in-depth look at all of the reported murders and non-negligent
       manslaughter across New York City's five boroughs in 2016. Data provided by the
       <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-YTD/5uac-w243">
-      New York Police Department</a>.</p>
-    <h3>Murders by Borough</h2>
-    <svg id="countByBorough" height="200" width="1000">
-    </svg>
+      New York City Police Department</a>.</p>
+    <h3>Murders by Borough</h3>
+    <svg id="countByBorough" height="200" width="1000"></svg>
+    <h3>Reports Inside vs. Outside</h3>
+    <svg id="countByLocation" height="200" width="2000" style="border: 1px solid black"></svg>
     <h3>Reported Murders by Location</h2>
 
     <script>
@@ -58,6 +88,18 @@
         return x;
       };
 
+      // Returns x number of murders reported in JSON file data for location (inside
+      // or outside) in borough boro
+      function countByLocation(data, location, boro) {
+        var x = 0;
+        data.forEach(function(d){
+          if(d.BORO_NM == boro){
+            if(d.LOC_OF_OCCUR_DESC == location) { x++; };
+          };
+        });
+        return x;
+      };
+
       var complaintData;
 
       d3.json("NYPD_Complaint.json", function (error, data) {
@@ -66,13 +108,12 @@
         complaintData.forEach(function(d){
           d.CMPLNT_NUM = d.CMPLNT_NUM;
           d.BORO_NM = d.BORO_NM;
-          d.Latitude = d.Latitude;
-          d.Longitude = d.Longitde;
+          d.LOC_OF_OCCUR_DESC = d.LOC_OF_OCCUR_DESC;
         });
 
         var svg = d3.select("#countByBorough");
 
-        var xScale = d3.scale.linear().domain([19, 116]).range([100, 700]);
+        var xScale = d3.scale.linear().domain([19, 116]).range([100, 500]);
         svg.append("rect")
         .attr("x", 130)
         .attr("y", 0)
@@ -172,6 +213,102 @@
         .style("font-family", "'Alfa Slab One', sans-serif")
         .style("text-align", "right")
         .text("Brooklyn");
+
+        // Count by location
+        var svg = d3.select("#countByLocation");
+
+        var x = 130; //Starting point x for rectangle
+
+        // Inside bar
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 20)
+        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("text-align", "right")
+        .text("Inside");
+
+        svg.append("rect")
+        .attr("x", x)
+        .attr("y", 0)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "INSIDE", "MANHATTAN")))
+        .style("fill", "#C21D1D");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "MANHATTAN")))
+        .attr("y", 0)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "INSIDE", "QUEENS")))
+        .style("fill", "green");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "QUEENS")))
+        .attr("y", 0)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "INSIDE", "STATEN ISLAND")))
+        .style("fill", "blue");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "STATEN ISLAND")))
+        .attr("y", 0)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "INSIDE", "BRONX")))
+        .style("fill", "orange");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "BRONX")))
+        .attr("y", 0)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "INSIDE", "BROOKLYN")))
+        .style("fill", "purple");
+
+        //Outside bar
+
+        var x = 130; //Starting point x for rectangle
+
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 60)
+        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("text-align", "right")
+        .text("Outside");
+
+        var xScale = d3.scale.linear().domain([19, 116]).range([100, 700]);
+        svg.append("rect")
+        .attr("x", x)
+        .attr("y", 40)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "MANHATTAN")))
+        .style("fill", "#C21D1D");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "MANHATTAN")))
+        .attr("y", 40)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "QUEENS")))
+        .style("fill", "green");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "QUEENS")))
+        .attr("y", 40)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "STATEN ISLAND")))
+        .style("fill", "blue");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "STATEN ISLAND")))
+        .attr("y", 40)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "BRONX")))
+        .style("fill", "orange");
+
+        svg.append("rect")
+        .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "BRONX")))
+        .attr("y", 40)
+        .attr("height", 30)
+        .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "BROOKLYN")))
+        .style("fill", "purple");
+
       });
 
       // Map
