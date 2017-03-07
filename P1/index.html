@@ -75,7 +75,7 @@
     <h3>Murders by Borough</h3>
     <svg id="countByBorough" height="200" width="1000"></svg>
     <h3>Reports Inside vs. Outside</h3>
-    <svg id="countByLocation" height="200" width="2000" style="border: 1px solid black"></svg>
+    <svg id="countByLocation" height="100" width="1000"></svg>
     <h3>Reported Murders by Location</h2>
 
     <script>
@@ -113,7 +113,7 @@
 
         var svg = d3.select("#countByBorough");
 
-        var xScale = d3.scale.linear().domain([19, 116]).range([100, 500]);
+        var xScale = d3.scale.linear().domain([19, 116]).range([100, 490]);
         svg.append("rect")
         .attr("x", 130)
         .attr("y", 0)
@@ -262,6 +262,13 @@
         .attr("width", xScale(countByLocation(complaintData, "INSIDE", "BROOKLYN")))
         .style("fill", "purple");
 
+        svg.append("text")
+        .attr("x", x + xScale(countByLocation(complaintData, "INSIDE", "BROOKLYN"))
+        + 10)
+        .attr("y", 20)
+        .style("font-family", "'Roboto', sans-serif")
+        .text("123");
+
         //Outside bar
 
         var x = 130; //Starting point x for rectangle
@@ -273,7 +280,6 @@
         .style("text-align", "right")
         .text("Outside");
 
-        var xScale = d3.scale.linear().domain([19, 116]).range([100, 700]);
         svg.append("rect")
         .attr("x", x)
         .attr("y", 40)
@@ -308,6 +314,13 @@
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "BROOKLYN")))
         .style("fill", "purple");
+
+        svg.append("text")
+        .attr("x", x + xScale(countByLocation(complaintData, "OUTSIDE", "BROOKLYN"))
+        + 10)
+        .attr("y", 60)
+        .style("font-family", "'Roboto', sans-serif")
+        .text("177");
 
       });
 
