@@ -2,6 +2,8 @@
 <meta charset="utf-8">
 <title>New York City Murders 2016</title>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<!-- <script src="https://d3js.org/d3.v4.min.js"></script>
+--> 
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 
@@ -11,8 +13,6 @@
 <style>
   * {
     background-color: #d6d5d4;
-    min-width: 1000px;
-    max-width: 1000px;
   }
 
   h1, h2, h3 {
@@ -24,9 +24,8 @@
   }
 
   .container {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 1000px;
+    max-width: 1000px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -43,6 +42,7 @@
   }
 
   #title{
+    width: 500px;
     position: absolute;
     background-color: transparent;
     color: #d6d5d4;
@@ -51,6 +51,7 @@
   }
 
   #subtitle {
+    width: 500px;
     position: absolute;
     background-color: transparent;
     color: #d6d5d4;
@@ -63,8 +64,9 @@
 
 
   <div class="container">
-    <img src="newyork.jpg" alt="New York City in the fog.
-    Photo by http://bit.ly/2mCgt0z">
+    <img src="newyork.jpg" alt="New York City skyline in greyscale">
+    <!-- Photo by Markus Sandin http://bit.ly/2mCgt0z -->
+
     <h1 id="title">Murders in New York City</h1>
     <p id="subtitle">Visualiztions by Pujaa Rajan and Tyler Alicea (pr338 & tra37)<br>
     INFO 5100: Visual Analytics for the Web</p>
@@ -75,7 +77,7 @@
     <h3>Murders by Borough</h3>
     <svg id="countByBorough" height="200" width="1000"></svg>
     <h3>Reports Inside vs. Outside</h3>
-    <svg id="countByLocation" height="100" width="1000"></svg>
+    <svg id="countByLocation" height="130" width="1000"></svg>
     <h3>Reported Murders by Location</h2>
 
     <script>
@@ -321,7 +323,6 @@
         .attr("y", 60)
         .style("font-family", "'Roboto', sans-serif")
         .text("177");
-
       });
 
       // Map
@@ -331,25 +332,25 @@
         xobj.open('GET', 'crimes.json', true);
         xobj.onreadystatechange = function() {
           if (xobj.readyState == 4 && xobj.status == "200") {
-            // .open will NOT return a value but simply returns undefined in
-            // async mode so use a callback
+          // .open will NOT return a value but simply returns undefined in async mode so use a callback
             callback(xobj.responseText);
-            }
+          }
         }
         xobj.send(null);
-      }
+      };
 
       // Call to function with anonymous callback
       loadJSON(function(response) {
         // Do Something with the response e.g.
         jsonresponse = JSON.parse(response);
+
         // Assuming json data is wrapped in square brackets as Drew suggests
       });
 
-      var width = 1000,
-        height = 1000;
+      var width = 700,
+      height = 700;
 
-      var svg = d3.select(".container").append("svg")
+      var svg = d3.select("body").append("svg")
       .attr("width", width)
       .attr("height", height);
 
@@ -359,33 +360,83 @@
       .translate([width/2,height/2])
       .scale(90000);
 
+      var color = d3.scale.category10();
+
       var path = d3.geo.path()
       .projection(projection);
-
       queue()
-      .defer(d3.json, "zipcode.json")
+      .defer(d3.json, "stackoverflow.json")
       .await(ready);
 
       function ready(error, us) {
+        console.log(us.objects.nyct2010)
         svg.append("g")
         .selectAll("path")
-        .data(topojson.feature(us, us.objects.zipcode).features)
+        .data(topojson.feature(us, us.objects.nyct2010).features)
         .enter().append("path")
+        .attr("d", path);
+
+        svg.selectAll(".tract")
+        .data(topojson.feature(us, us.objects.nyct2010).features)
+        .enter().append("path")
+        .attr('class','tract')
+        .attr('fill',function(d,i) { return color(d.properties.BoroCode); })
         .attr("d", path);
 
         var circles = svg.selectAll("circle").data(jsonresponse);
 
         circles.enter()
-        .append("circle").attr("r", 10)
-        .style("stroke","red")
-        .style("fill","red")
+        .append("circle").attr("r", 3)
+        .style("stroke","#000")
+        .style("fill","#fff")
         .attr("transform", function(d) {
-          return "translate(" + projection([
+        return "translate(" + projection([
           d.Longitude,
           d.Latitude
           ]) + ")";
-         });
-      };
+        });
+      }
+
+      // Map labels
+      svg.append("text")
+      .attr("x", 270)
+      .attr("y", 190)
+      .style("font-family", "'Roboto', sans-serif")
+      .style("fill", "#4c4744")
+      .style("font-weight", "bold")
+      .text("MANHATTAN");
+
+      svg.append("text")
+      .attr("x", 100)
+      .attr("y", 415)
+      .style("font-family", "'Roboto', sans-serif")
+      .style("fill", "#4c4744")
+      .style("font-weight", "bold")
+      .text("STATEN ISLAND");
+
+      svg.append("text")
+      .attr("x", 600)
+      .attr("y", 50)
+      .style("font-family", "'Roboto', sans-serif")
+      .style("fill", "#4c4744")
+      .style("font-weight", "bold")
+      .text("BRONX");
+
+      svg.append("text")
+      .attr("x", 620)
+      .attr("y", 200)
+      .style("font-family", "'Roboto', sans-serif")
+      .style("fill", "#4c4744")
+      .style("font-weight", "bold")
+      .text("QUEENS");
+
+      svg.append("text")
+      .attr("x", 310)
+      .attr("y", 575)
+      .style("font-family", "'Roboto', sans-serif")
+      .style("fill", "#4c4744")
+      .style("font-weight", "bold")
+      .text("BROOKLYN");
     </script>
   </div>
 </body>
