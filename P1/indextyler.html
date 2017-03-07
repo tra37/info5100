@@ -15,15 +15,10 @@
 <div>
   <svg id="countByBorough" height="300" width="500" style="border: 1px solid white">
   </svg><br>
-  <svg id="totalSF" height="150" width="500" style="border: 1px solid white"></svg>
-</div>
-<div id="hi">
+  <svg id="countByDay" height="500" width="500" style="border: 1px solid white"></svg>
 </div>
 
 <script>
-
-var complaintData;
-var dataArray;
 
 // Returns x number of murders reported in JSON file data in borough boro
 function countPerBorough(data, boro){
@@ -33,6 +28,8 @@ function countPerBorough(data, boro){
   });
   return x;
 };
+
+var complaintData;
 
 d3.json("NYPD_Complaint.json", function (error, data) {
   complaintData = data;
@@ -48,8 +45,6 @@ d3.json("NYPD_Complaint.json", function (error, data) {
   var svg = d3.select("#countByBorough");
 
   var xScale = d3.scaleLinear().domain([19, 116]).range([50, 450]);
-
-
   svg.append("rect")
   .attr("x", 0)
   .attr("y", 50)
@@ -84,6 +79,19 @@ d3.json("NYPD_Complaint.json", function (error, data) {
   .attr("height", 30)
   .attr("width", xScale(countPerBorough(complaintData, "BROOKLYN")))
   .style("fill", "orange");
+
+  var minDate = new Date(2016,0,1);
+  var maxDate = new Date(2016,11,31);
+
+  var svg = d3.select("#countByDay");
+
+  var yScale = d3.scaleLinear().domain([19, 116]).range([450, 50]);
+  var xScale = d3.scaleLinear().domain([minDate, maxDate]).range([50, 450]);
+
+  var svg = d3.select("#countByDay");
+  //  svg.append("")
+
+
 });
 
 </script>
