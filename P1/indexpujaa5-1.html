@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+  .zip {
+    fill: none;
+    stroke: #CCC;
+    stroke-width: .5px;
+  }
+</style>
+
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+  <script>
+
+
+function loadJSON(callback) {
+
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'crimes.json', true);
+    xobj.onreadystatechange = function() {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+
+            // .open will NOT return a value but simply returns undefined in async mode so use a callback
+            callback(xobj.responseText);
+
+        }
+    }
+    xobj.send(null);
+
+}
+
+
+
+// Call to function with anonymous callback
+loadJSON(function(response) {
+    // Do Something with the response e.g.
+    jsonresponse = JSON.parse(response);
+
+    // Assuming json data is wrapped in square brackets as Drew suggests
+
+
+});
+
+
+
+var width = 1000,
+    height = 1000;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+  var projection = d3.geo.albers()
+   .center([0,40.7])
+   .rotate([74,0])
+   .translate([width/2,height/2])
+   .scale(90000);
+
+   var path = d3.geo.path()
+    .projection(projection);
+
+    queue()
+    .defer(d3.json, "zipcode.json")
+    .await(ready);
+
+
+
+    function ready(error, us) {
+      svg.append("g")
+      .selectAll("path")
+      .data(topojson.feature(us, us.objects.zipcode).features)
+      .enter().append("path")
+      .attr("d", path);
+
+              var circles = svg.selectAll("circle").data(jsonresponse);
+
+    circles.enter()
+          .append("circle").attr("r", 10)
+          .style("stroke","red")
+          .style("fill","red")
+          .attr("transform", function(d) {
+    return "translate(" + projection([
+      d.Longitude,
+      d.Latitude
+    ]) + ")";
+ });
+    
+
+    }
+
+  </script>
+</body>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>New York City Murders 2016</title>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+
+<style>
+  * {
+    background-color: #d6d5d4;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Alfa Slab One', sans-serif;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .zip {
+    fill: none;
+    stroke: #CCC;
+    stroke-width: .5px;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <h1>Murders in New York City</h1>
+    <p>An in-depth look at all of the reported murders and non-negligent
+      manslaughter across New York City's five boroughs in 2016. Data provided by the
+      <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-YTD/5uac-w243">
+      New York Police Department</a>.</p>
+    <h3>Murders by Borough</h2>
+    <svg id="countByBorough" height="200" width="1000">
+    </svg>
+    <h3>Reported Murders by Location</h2>
+
+    <script>
+      // Returns x number of murders reported in JSON file data in borough boro
+      function countPerBorough(data, boro){
+        var x = 0;
+        data.forEach(function(d) {
+          if(d.BORO_NM == boro) { x++; };
+        });
+        return x;
+      };
+
+      var complaintData;
+
+      d3.json("NYPD_Complaint.json", function (error, data) {
+        complaintData = data;
+
+        complaintData.forEach(function(d){
+          d.CMPLNT_NUM = d.CMPLNT_NUM;
+          d.BORO_NM = d.BORO_NM;
+          d.Latitude = d.Latitude;
+          d.Longitude = d.Longitde;
+        });
+
+        var svg = d3.select("#countByBorough");
+
+        var xScale = d3.scale.linear().domain([19, 116]).range([100, 700]);
+        svg.append("rect")
+        .attr("x", 130)
+        .attr("y", 0)
+        .attr("height", 30)
+        .attr("width", xScale(countPerBorough(complaintData, "MANHATTAN")))
+        .style("fill", "#C21D1D");
+
+        svg.append("text")
+        .attr("x", 140 + xScale(countPerBorough(complaintData, "MANHATTAN")))
+        .attr("y", 20)
+        .style("font-family", "'Roboto', sans-serif")
+        .text(countPerBorough(complaintData, "MANHATTAN"));
+
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 20)
+        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("text-align", "right")
+        .text("Manhattan");
+
+        svg.append("rect")
+        .attr("x", 130)
+        .attr("y", 40)
+        .attr("height", 30)
+        .attr("width", xScale(countPerBorough(complaintData, "QUEENS")))
+        .style("fill", "#C21D1D");
+
+        svg.append("text")
+        .attr("x", 140 + xScale(countPerBorough(complaintData, "QUEENS")))
+        .attr("y", 60)
+        .style("font-family", "'Roboto', sans-serif")
+        .text(countPerBorough(complaintData, "QUEENS"));
+
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 60)
+        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("text-align", "right")
+        .text("Queens");
+
+        svg.append("rect")
+        .attr("x", 130)
+        .attr("y", 80)
+        .attr("height", 30)
+        .attr("width", xScale(countPerBorough(complaintData, "STATEN ISLAND")))
+        .style("fill", "#C21D1D");
+
+        svg.append("text")
+        .attr("x", 140 + xScale(countPerBorough(complaintData, "STATEN ISLAND")))
+        .attr("y", 100)
+        .style("font-family", "'Roboto', sans-serif")
+        .text(countPerBorough(complaintData, "STATEN ISLAND"));
+
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 100)
+        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("text-align", "right")
+        .text("Staten Island");
+
+        svg.append("rect")
+        .attr("x", 130)
+        .attr("y", 120)
+        .attr("height", 30)
+        .attr("width", xScale(countPerBorough(complaintData, "BRONX")))
+        .style("fill", "#C21D1D");
+
+        svg.append("text")
+        .attr("x", 140 + xScale(countPerBorough(complaintData, "BRONX")))
+        .attr("y", 140)
+        .style("font-family", "'Roboto', sans-serif")
+        .text(countPerBorough(complaintData, "BRONX"));
+
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 140)
+        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("text-align", "right")
+        .text("Bronx");
+
+        svg.append("rect")
+        .attr("x", 130)
+        .attr("y", 160)
+        .attr("height", 30)
+        .attr("width", xScale(countPerBorough(complaintData, "BROOKLYN")))
+        .style("fill", "#C21D1D");
+
+        svg.append("text")
+        .attr("x", 140 + xScale(countPerBorough(complaintData, "BROOKLYN")))
+        .attr("y", 180)
+        .style("font-family", "'Roboto', sans-serif")
+        .text(countPerBorough(complaintData, "BROOKLYN"));
+
+        svg.append("text")
+        .attr("x", 0)
+        .attr("y", 180)
+        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("text-align", "right")
+        .text("Brooklyn");
+      });
+
+      // Map
+      function loadJSON(callback) {
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', 'crimes.json', true);
+        xobj.onreadystatechange = function() {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // .open will NOT return a value but simply returns undefined in
+            // async mode so use a callback
+            callback(xobj.responseText);
+            }
+        }
+        xobj.send(null);
+      }
+
+      // Call to function with anonymous callback
+      loadJSON(function(response) {
+        // Do Something with the response e.g.
+        jsonresponse = JSON.parse(response);
+        // Assuming json data is wrapped in square brackets as Drew suggests
+      });
+
+      var width = 1000,
+        height = 1000;
+
+      var svg = d3.select(".container").append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+      var projection = d3.geo.albers()
+      .center([0,40.7])
+      .rotate([74,0])
+      .translate([width/2,height/2])
+      .scale(90000);
+
+      var path = d3.geo.path()
+      .projection(projection);
+
+      queue()
+      .defer(d3.json, "zipcode.json")
+      .await(ready);
+
+      function ready(error, us) {
+        svg.append("g")
+        .selectAll("path")
+        .data(topojson.feature(us, us.objects.zipcode).features)
+        .enter().append("path")
+        .attr("d", path);
+
+        var circles = svg.selectAll("circle").data(jsonresponse);
+
+        circles.enter()
+        .append("circle").attr("r", 10)
+        .style("stroke","red")
+        .style("fill","red")
+        .attr("transform", function(d) {
+          return "translate(" + projection([
+          d.Longitude,
+          d.Latitude
+          ]) + ")";
+         });
+      };
+    </script>
+  </div>
+</body>
