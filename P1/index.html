@@ -1,15 +1,13 @@
-style("font-family", "'Patua One', sans-serif")<!DOCTYPE html>
+<!DOCTYPE html>
 <meta charset="utf-8">
 <title>New York City Murders 2016</title>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<script src="https://d3js.org/d3-color.v1.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
 
 <style>
   * {
@@ -24,6 +22,15 @@ style("font-family", "'Patua One', sans-serif")<!DOCTYPE html>
   p {
     font-family: 'Roboto', sans-serif;
     color: #bcbcbc;
+  }
+
+  a {
+      text-decoration: none;
+      color: #fff;
+  }
+
+  a:hover {
+      color:#A9C7D1;
   }
 
   .container {
@@ -69,17 +76,27 @@ style("font-family", "'Patua One', sans-serif")<!DOCTYPE html>
     <!-- Photo by Markus Sandin http://bit.ly/2mCgt0z -->
 
     <h1 id="title">Murders in New York City</h1>
-    <p id="subtitle">Visualiztions by Pujaa Rajan and Tyler Alicea (pr338 & tra37)<br>
+    <p id="subtitle">Visualizations by Pujaa Rajan and Tyler Alicea (pr338 & tra37)<br>
     INFO 5100: Visual Analytics for the Web</p>
-    <p>An in-depth look at all of the reported murders and non-negligent
+    <p>An in-depth look at the 300 reported murders and non-negligent
       manslaughter across New York City's five boroughs in 2016. Data provided by the
       <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-YTD/5uac-w243">
       New York City Police Department</a>.</p>
+
     <h3>Murders by Borough</h3>
+    <p>By breaking crime data up by borough, it becomes more clear as to where
+      murders have occurred in various parts of the city.</p>
     <svg id="countByBorough" height="200" width="1000"></svg>
     <h3>Reports Inside vs. Outside</h3>
+    <p>Most of the reported murders in 2016 that took place in the city occured
+      outside. In most of the boroughs, more murders took place outside compared
+      to indoors, except in Manhattan, which had 17 murders inside and 16 outside,
+      and Staten Island, which had 13 inside and 6 outside.</p>
     <svg id="countByLocation" height="130" width="1000"></svg>
-    <h3>Reported Murders by Location</h2>
+    <h3>Reported Murders by Location</h3>
+    <p>Each dot represents a single reported murder in New York City. Looking at
+    map indicates a number of clusters appearing in areas like Harlem in
+    northeast Manhattan, the Bronx, and parts of Brooklyn.</p>
 
     <script>
       // COLORS
@@ -469,8 +486,6 @@ style("font-family", "'Patua One', sans-serif")<!DOCTYPE html>
       .style("fill", "#bcbcbc")
       .style("font-weight", "bold")
       .text("BROOKLYN");
-
-
     </script>
   </div>
 </body>
