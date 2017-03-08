@@ -51,6 +51,14 @@
     width: 100%;
   }
 
+  .axis path,
+  .axis line {
+      fill: none;
+      stroke: #bcbcbc;
+      stroke-width: 1;
+      shape-rendering: crispEdges;
+  }
+
   #title{
     width: 500px;
     position: absolute;
@@ -93,6 +101,12 @@
       to indoors, except in Manhattan, which had 17 murders inside and 16 outside,
       and Staten Island, which had 13 inside and 6 outside.</p>
     <svg id="countByLocation" height="130" width="1000"></svg>
+    <h3>Reports by Time of Day and Date</h3>
+    <p>Each dot highlights a single reported murder by date going across and
+      time of day going vertically. Dots are colored by the borough in which
+      the murder took place. Throughout 2016, murders tended to take place
+      later at night or in the early hours of the morning.</p>
+    <div id="scatter"></div>
     <h3>Reported Murders by Location</h3>
     <p>Each dot represents a single reported murder in New York City. Looking at
     map indicates a number of clusters appearing in areas like Harlem in
@@ -363,6 +377,91 @@
         .style("fill", "#bcbcbc")
         .text("177");
       });
+
+      // Time graph
+      var margin = {
+          top: 30,
+          right: 20,
+          bottom: 30,
+          left: 80
+        },
+        width = 600 - margin.left - margin.right,
+        height = 270 - margin.top - margin.bottom;
+
+      // Parse the date / time
+      var parseDate = d3.timeParse("%d-%b-%y");
+      var parseTime = d3.timeParse("%H:%M:%S");
+
+      // Set the ranges
+      var x = d3.scaleTime().range([0, width]);
+      var y = d3.scaleTime().range([height, 0]);
+
+      // Define the axes
+      var xAxis = d3.axisBottom(x);
+
+      var yAxis = d3.axisLeft(y);
+
+      // Adds the svg canvas
+      var svg1 = d3.select("#scatter")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+        d3.csv("timedata.csv", function(error, data) {
+          data.forEach(function(d) {
+              d.Day = parseDate(d.Day);
+              d.Time = parseTime(d.Time);
+          });
+
+        // Scale the range of the data
+        x.domain(d3.extent(data, function(d) {
+          return d.Day;
+        }));
+        y.domain([parseTime("00:00:01"), parseTime("23:59:59")]);
+
+        var cValue = function(d) { return d.Borough;},
+        color = d3.scaleOrdinal(d3.schemeCategory10);
+
+        // Add the scatterplot
+        svg1.selectAll("dot")
+        .data(data)
+        .enter().append("circle")
+        .attr("r", 3.5)
+        .attr("cx", function(d) {
+          return x(d.Day);
+        })
+        .attr("cy", function(d) {
+          return y(d.Time);
+        })
+        .style("fill", function(d) { return color(cValue(d));}) ;
+
+        // This black box allows us to make the colors darker while still using
+        // the d3 color API.
+        svg1.append("rect")
+        .attr("x", -10)
+        .attr("y", -10)
+        .attr("height", 250)
+        .attr("width", 800)
+        .style("fill", "#000")
+        .style("opacity", .35);
+
+        // Add the X Axis
+        svg1.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0, 220)")
+        .style("stroke", "#bcbcbc")
+        .call(xAxis);
+
+        // Add the Y Axis
+        svg1.append("g")
+        .attr("class", "y axis")
+        .style("stroke", "#bcbcbc")
+        .call(yAxis);
+
+        });
 
       // Map
       function loadJSON(callback) {
