@@ -5,6 +5,7 @@
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.21.0/d3-legend.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -93,7 +94,8 @@
 
     <h3>Murders by Borough</h3>
     <p>By breaking crime data up by borough, it becomes more clear as to where
-      murders have occurred in various parts of the city.</p>
+      murders have occurred in various parts of the city. Each borough is
+      represented by the same color through each of the visualizations.</p>
     <svg id="countByBorough" height="200" width="1000"></svg>
     <h3>Reports Inside vs. Outside</h3>
     <p>Most of the reported murders in 2016 that took place in the city occured
@@ -105,7 +107,8 @@
     <p>Each dot highlights a single reported murder by date going across and
       time of day going vertically. Dots are colored by the borough in which
       the murder took place. Throughout 2016, murders tended to take place
-      later at night or in the early hours of the morning.</p>
+      later at night or in the early hours of the morning, with fewer
+      dots clustered around noon.</p>
     <div id="scatter"></div>
     <h3>Reported Murders by Location</h3>
     <p>Each dot represents a single reported murder in New York City. Looking at
@@ -404,7 +407,7 @@
       // Adds the svg canvas
       var svg1 = d3.select("#scatter")
         .append("svg")
-        .attr("width", width + margin.left + margin.right)
+        .attr("width", 1000)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform",
@@ -461,7 +464,29 @@
         .style("stroke", "#bcbcbc")
         .call(yAxis);
 
-        });
+        // The following block of code was adapted from the d3-legend
+        // dependency as documented here https://github.com/susielu/d3-legend
+        // and explained here http://d3-legend.susielu.com/#color-ordinal
+
+        var ordinal = d3.scaleOrdinal()
+        .domain(["Manhattan", "Queens", "Staten Island", "Bronx", "Brooklyn"])
+        .range([manhattanColor, queensColor, statenColor, bronxColor,
+          brooklynColor]);
+
+        svg1.append("g")
+        .attr("class", "legendOrdinal")
+        .attr("transform", "translate(600,20)");
+
+        var legendOrdinal = d3.legendColor()
+        .shape("path", d3.symbol().type(d3.symbolCircle).size(75)())
+        .shapePadding(10)
+        .scale(ordinal);
+
+        svg1.select(".legendOrdinal")
+        .call(legendOrdinal)
+        .style("font-family", "'Roboto', sans-serif")
+        .style("fill", "#bcbcbc");
+      });
 
       // Map
       function loadJSON(callback) {
