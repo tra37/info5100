@@ -1,26 +1,29 @@
-<!DOCTYPE html>
+style("font-family", "'Patua One', sans-serif")<!DOCTYPE html>
 <meta charset="utf-8">
 <title>New York City Murders 2016</title>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<!-- <script src="https://d3js.org/d3.v4.min.js"></script>
---> 
+<script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="http://d3js.org/queue.v1.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+
 
 <style>
   * {
-    background-color: #d6d5d4;
+    background-color: #000;
   }
 
   h1, h2, h3 {
-    font-family: 'Alfa Slab One', sans-serif;
+    font-family: 'Patua One', serif;
+    color: #bcbcbc;
   }
 
   p {
     font-family: 'Roboto', sans-serif;
+    color: #bcbcbc;
   }
 
   .container {
@@ -61,8 +64,6 @@
 </style>
 
 <body>
-
-
   <div class="container">
     <img src="newyork.jpg" alt="New York City skyline in greyscale">
     <!-- Photo by Markus Sandin http://bit.ly/2mCgt0z -->
@@ -81,6 +82,13 @@
     <h3>Reported Murders by Location</h2>
 
     <script>
+      // COLORS
+      var manhattanColor = "7e3f14",
+          bronxColor = "#6a1517",
+          brooklynColor = "#194f1a",
+          queensColor = "#49355d",
+          statenColor = "#133c59";
+
       // Returns x number of murders reported in JSON file data in borough boro
       function countPerBorough(data, boro){
         var x = 0;
@@ -115,25 +123,27 @@
 
         var svg = d3.select("#countByBorough");
 
-        var xScale = d3.scale.linear().domain([19, 116]).range([100, 490]);
+        var xScale = d3.scaleLinear().domain([19, 116]).range([100, 490]);
         svg.append("rect")
         .attr("x", 130)
         .attr("y", 0)
         .attr("height", 30)
         .attr("width", xScale(countPerBorough(complaintData, "MANHATTAN")))
-        .style("fill", "#C21D1D");
+        .style("fill", manhattanColor);
 
         svg.append("text")
         .attr("x", 140 + xScale(countPerBorough(complaintData, "MANHATTAN")))
         .attr("y", 20)
+        .style("fill", "#bcbcbc")
         .style("font-family", "'Roboto', sans-serif")
         .text(countPerBorough(complaintData, "MANHATTAN"));
 
         svg.append("text")
         .attr("x", 0)
         .attr("y", 20)
-        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("font-family", "'Patua One', sans-serif")
         .style("text-align", "right")
+        .style("fill", "#bcbcbc")
         .text("Manhattan");
 
         svg.append("rect")
@@ -141,19 +151,21 @@
         .attr("y", 40)
         .attr("height", 30)
         .attr("width", xScale(countPerBorough(complaintData, "QUEENS")))
-        .style("fill", "#C21D1D");
+        .style("fill", queensColor);
 
         svg.append("text")
         .attr("x", 140 + xScale(countPerBorough(complaintData, "QUEENS")))
         .attr("y", 60)
         .style("font-family", "'Roboto', sans-serif")
+        .style("fill", "#bcbcbc")
         .text(countPerBorough(complaintData, "QUEENS"));
 
         svg.append("text")
         .attr("x", 0)
         .attr("y", 60)
-        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("font-family", "'Patua One', sans-serif")
         .style("text-align", "right")
+        .style("fill", "#bcbcbc")
         .text("Queens");
 
         svg.append("rect")
@@ -161,19 +173,21 @@
         .attr("y", 80)
         .attr("height", 30)
         .attr("width", xScale(countPerBorough(complaintData, "STATEN ISLAND")))
-        .style("fill", "#C21D1D");
+        .style("fill", statenColor);
 
         svg.append("text")
         .attr("x", 140 + xScale(countPerBorough(complaintData, "STATEN ISLAND")))
         .attr("y", 100)
         .style("font-family", "'Roboto', sans-serif")
+        .style("fill", "#bcbcbc")
         .text(countPerBorough(complaintData, "STATEN ISLAND"));
 
         svg.append("text")
         .attr("x", 0)
         .attr("y", 100)
-        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("font-family", "'Patua One', sans-serif")
         .style("text-align", "right")
+        .style("fill", "#bcbcbc")
         .text("Staten Island");
 
         svg.append("rect")
@@ -181,19 +195,21 @@
         .attr("y", 120)
         .attr("height", 30)
         .attr("width", xScale(countPerBorough(complaintData, "BRONX")))
-        .style("fill", "#C21D1D");
+        .style("fill", bronxColor);
 
         svg.append("text")
         .attr("x", 140 + xScale(countPerBorough(complaintData, "BRONX")))
         .attr("y", 140)
         .style("font-family", "'Roboto', sans-serif")
+        .style("fill", "#bcbcbc")
         .text(countPerBorough(complaintData, "BRONX"));
 
         svg.append("text")
         .attr("x", 0)
         .attr("y", 140)
-        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("font-family", "'Patua One', sans-serif")
         .style("text-align", "right")
+        .style("fill", "#bcbcbc")
         .text("Bronx");
 
         svg.append("rect")
@@ -201,19 +217,21 @@
         .attr("y", 160)
         .attr("height", 30)
         .attr("width", xScale(countPerBorough(complaintData, "BROOKLYN")))
-        .style("fill", "#C21D1D");
+        .style("fill", brooklynColor);
 
         svg.append("text")
         .attr("x", 140 + xScale(countPerBorough(complaintData, "BROOKLYN")))
         .attr("y", 180)
         .style("font-family", "'Roboto', sans-serif")
+        .style("fill", "#bcbcbc")
         .text(countPerBorough(complaintData, "BROOKLYN"));
 
         svg.append("text")
         .attr("x", 0)
         .attr("y", 180)
-        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("font-family", "'Patua One', sans-serif")
         .style("text-align", "right")
+        .style("fill", "#bcbcbc")
         .text("Brooklyn");
 
         // Count by location
@@ -225,8 +243,9 @@
         svg.append("text")
         .attr("x", 0)
         .attr("y", 20)
-        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("font-family", "'Patua One', sans-serif")
         .style("text-align", "right")
+        .style("fill", "#bcbcbc")
         .text("Inside");
 
         svg.append("rect")
@@ -234,41 +253,42 @@
         .attr("y", 0)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "INSIDE", "MANHATTAN")))
-        .style("fill", "#C21D1D");
+        .style("fill", manhattanColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "MANHATTAN")))
         .attr("y", 0)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "INSIDE", "QUEENS")))
-        .style("fill", "green");
+        .style("fill", queensColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "QUEENS")))
         .attr("y", 0)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "INSIDE", "STATEN ISLAND")))
-        .style("fill", "blue");
+        .style("fill", statenColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "STATEN ISLAND")))
         .attr("y", 0)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "INSIDE", "BRONX")))
-        .style("fill", "orange");
+        .style("fill", bronxColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "INSIDE", "BRONX")))
         .attr("y", 0)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "INSIDE", "BROOKLYN")))
-        .style("fill", "purple");
+        .style("fill", brooklynColor);
 
         svg.append("text")
         .attr("x", x + xScale(countByLocation(complaintData, "INSIDE", "BROOKLYN"))
         + 10)
         .attr("y", 20)
         .style("font-family", "'Roboto', sans-serif")
+        .style("fill", "#bcbcbc")
         .text("123");
 
         //Outside bar
@@ -278,8 +298,9 @@
         svg.append("text")
         .attr("x", 0)
         .attr("y", 60)
-        .style("font-family", "'Alfa Slab One', sans-serif")
+        .style("font-family", "'Patua One', sans-serif")
         .style("text-align", "right")
+        .style("fill", "#bcbcbc")
         .text("Outside");
 
         svg.append("rect")
@@ -287,41 +308,42 @@
         .attr("y", 40)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "MANHATTAN")))
-        .style("fill", "#C21D1D");
+        .style("fill", manhattanColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "MANHATTAN")))
         .attr("y", 40)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "QUEENS")))
-        .style("fill", "green");
+        .style("fill", queensColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "QUEENS")))
         .attr("y", 40)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "STATEN ISLAND")))
-        .style("fill", "blue");
+        .style("fill", statenColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "STATEN ISLAND")))
         .attr("y", 40)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "BRONX")))
-        .style("fill", "orange");
+        .style("fill", bronxColor);
 
         svg.append("rect")
         .attr("x", x = x + xScale(countByLocation(complaintData, "OUTSIDE", "BRONX")))
         .attr("y", 40)
         .attr("height", 30)
         .attr("width", xScale(countByLocation(complaintData, "OUTSIDE", "BROOKLYN")))
-        .style("fill", "purple");
+        .style("fill", brooklynColor);
 
         svg.append("text")
         .attr("x", x + xScale(countByLocation(complaintData, "OUTSIDE", "BROOKLYN"))
         + 10)
         .attr("y", 60)
         .style("font-family", "'Roboto', sans-serif")
+        .style("fill", "#bcbcbc")
         .text("177");
       });
 
@@ -354,22 +376,21 @@
       .attr("width", width)
       .attr("height", height);
 
-      var projection = d3.geo.albers()
+      var projection = d3.geoAlbers()
       .center([0,40.7])
       .rotate([74,0])
       .translate([width/2,height/2])
       .scale(90000);
 
-      var color = d3.scale.category10();
+      var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-      var path = d3.geo.path()
+      var path = d3.geoPath()
       .projection(projection);
       queue()
-      .defer(d3.json, "stackoverflow.json")
+      .defer(d3.json, "map.json")
       .await(ready);
 
       function ready(error, us) {
-        console.log(us.objects.nyct2010)
         svg.append("g")
         .selectAll("path")
         .data(topojson.feature(us, us.objects.nyct2010).features)
@@ -385,16 +406,27 @@
 
         var circles = svg.selectAll("circle").data(jsonresponse);
 
+        // This black box allows us to make the colors darker while still using
+        // the d3 color API.
+        svg.append("rect")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("height", 760)
+        .attr("width", 800)
+        .style("fill", "#000")
+        .style("opacity", .5);
+
         circles.enter()
         .append("circle").attr("r", 3)
         .style("stroke","#000")
-        .style("fill","#fff")
+        .style("fill","#bcbcbc")
         .attr("transform", function(d) {
         return "translate(" + projection([
           d.Longitude,
           d.Latitude
           ]) + ")";
         });
+
       }
 
       // Map labels
@@ -402,7 +434,7 @@
       .attr("x", 270)
       .attr("y", 190)
       .style("font-family", "'Roboto', sans-serif")
-      .style("fill", "#4c4744")
+      .style("fill", "#bcbcbc")
       .style("font-weight", "bold")
       .text("MANHATTAN");
 
@@ -410,7 +442,7 @@
       .attr("x", 100)
       .attr("y", 415)
       .style("font-family", "'Roboto', sans-serif")
-      .style("fill", "#4c4744")
+      .style("fill", "#bcbcbc")
       .style("font-weight", "bold")
       .text("STATEN ISLAND");
 
@@ -418,7 +450,7 @@
       .attr("x", 600)
       .attr("y", 50)
       .style("font-family", "'Roboto', sans-serif")
-      .style("fill", "#4c4744")
+      .style("fill", "#bcbcbc")
       .style("font-weight", "bold")
       .text("BRONX");
 
@@ -426,7 +458,7 @@
       .attr("x", 620)
       .attr("y", 200)
       .style("font-family", "'Roboto', sans-serif")
-      .style("fill", "#4c4744")
+      .style("fill", "#bcbcbc")
       .style("font-weight", "bold")
       .text("QUEENS");
 
@@ -434,9 +466,11 @@
       .attr("x", 310)
       .attr("y", 575)
       .style("font-family", "'Roboto', sans-serif")
-      .style("fill", "#4c4744")
+      .style("fill", "#bcbcbc")
       .style("font-weight", "bold")
       .text("BROOKLYN");
+
+
     </script>
   </div>
 </body>
